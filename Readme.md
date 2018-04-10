@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мария Волковская](https://up.htmlacademy.ru/adaptive/14/user/309485).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Сачев] (https://htmlacademy.ru/profile/id11939).
 
 ---
 
