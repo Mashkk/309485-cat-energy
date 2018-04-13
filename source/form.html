@@ -38,13 +38,13 @@
 
         <fieldset class="questionnaire__pet-stats pet-stats">
           <label class="pet-stat__name">Имя:*
-            <input class="pet-stat__name-field" type="text" placeholder="Барсик">
+            <input class="pet-stat__name-field" type="text" placeholder="Барсик" required>
           </label>
           <label class="pet-stat__weight">Вес (кг):*
-            <input class="pet-stat__weight-input" type="text" placeholder="7" pattern="[1-9]{2}">
+            <input class="pet-stat__weight-input" type="text" placeholder="7" pattern="[1-9]{1-2}" required>
           </label>
           <label class="pet-stat__age">Вес (кг):*
-            <input class="pet-stat__age-input" type="text" placeholder="7" pattern="[1-9]{2}">
+            <input class="pet-stat__age-input" type="text" placeholder="7" pattern="[1-9]{1-2}">
           </label>
         </fieldset>
 
@@ -60,10 +60,10 @@
         <fieldset class="questionnaire__owners-contacts owners-contacts">
           <legend class="owners-contacts__title">Контактные данные (владельца кота)</legend>
           <label class="owners-contact__email">
-            <input class="owners-contact__email-input" type="email" placeholder="kuklachev@gmail.com">
+            <input class="owners-contact__email-input" type="email" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="owners-contact__phone-number">
-            <input class="owners-contact__phone-number-input" type="text" placeholder="8 (960) 900-60-90" pattern="\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{3}">
+            <input class="owners-contact__phone-number-input" type="text" placeholder="8 (960) 900-60-90" pattern="\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
           </label>
         </fieldset>
 
