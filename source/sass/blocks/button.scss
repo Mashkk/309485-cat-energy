@@ -9,18 +9,20 @@
 
   font: 400 14px $oswald-font;
   line-height: 40px;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
 
   background-color: $green;
   border: none;
-    &:hover,
-    &:focus {
-      background-color: $green-hover;
+
+  &:hover,
+  &:focus {
+    background-color: $green-hover;
     }
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
     }
 }
