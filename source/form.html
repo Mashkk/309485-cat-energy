@@ -38,47 +38,47 @@
 
         <fieldset class="questionnaire__pet-stats pet-stats">
           <div class="pet-stats__wrapper pet-stats__wrapper--name">
-            <label class="pet-stat__name" for="pet-name">Имя:*</label>
-            <input class="pet-stat__name-field" id="pet-name" type="text" placeholder="Барсик" required>
+            <label class="pet-stats__name" for="pet-name">Имя:*</label>
+            <input class="pet-stats__name-field" id="pet-name" type="text" placeholder="Барсик" required>
           </div>
           <div class="pet-stats__wrapper pet-stats__wrapper--weight">
-            <label class="pet-stat__weight" for="pet-weight">Вес (кг):*</label>
-            <input class="pet-stat__weight-input" id="pet-weight" type="text" placeholder="7" pattern="[1-9]{1,2}" required>
+            <label class="pet-stats__weight" for="pet-weight">Вес (кг):*</label>
+            <input class="pet-stats__weight-input" id="pet-weight" type="text" placeholder="7" pattern="[1-9]{1,2}" required>
           </div>
           <div class="pet-stats__wrapper pet-stats__wrapper--age">
-            <label class="pet-stat__age" for="pet-age">Возраст (лет):</label>
-            <input class="pet-stat__age-input" id="pet-age" type="text" placeholder="7" pattern="[1-9]{1,2}">
+            <label class="pet-stats__age" for="pet-age">Возраст (лет):</label>
+            <input class="pet-stats__age-input" id="pet-age" type="text" placeholder="7" pattern="[1-9]{1,2}">
           </div>
         </fieldset>
 
         <fieldset class="questionnaire__pets-problems pets-problems">
           <div class="pets-problems__wrapper pets-problems__wrapper--losing-weight">
-            <input class="pets-problem__input visually-hidden" id="losing-weight" name="pets-problem" type="radio" value="losing-weight" checked>
-            <label class="pets-problem__label" for="losing-weight">Похудение</label>
+            <input class="pets-problems__input visually-hidden" id="losing-weight" name="pets-problems" type="radio" value="losing-weight" checked>
+            <label class="pets-problems__label" for="losing-weight">Похудение</label>
           </div>
           <div class="pets-problems__wrapper pets-problems__wrapper--gain-weight">
-            <input class="pets-problem__input visually-hidden" id="gain-weight" name="pets-problem" type="radio" value="gain-weight">
-            <label class="pets-problem__label" for="gain-weight">Набор массы</label>
+            <input class="pets-problems__input visually-hidden" id="gain-weight" name="pets-problems" type="radio" value="gain-weight">
+            <label class="pets-problems__label" for="gain-weight">Набор массы</label>
           </div>
           <div class="pets-problems__wrapper pets-problems__wrapper--indefinite">
-            <input class="pets-problem__input visually-hidden" id="indefinite" name="pets-problem" type="radio" value="indefinite">
-            <label class="pets-problem__label" for="indefinite">Не знаю (нужен ваш совет)</label>
+            <input class="pets-problems__input visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite">
+            <label class="pets-problems__label" for="indefinite">Не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
 
         <fieldset class="questionnaire__owners-contacts owners-contacts">
           <legend class="owners-contacts__title">Контактные данные (владельца кота)</legend>
           <div class="owners-contacts__wrapper owners-contacts__wrapper--email">
-            <label class="owners-contact__email" for="owners-email">E-mail:*</label>
-            <input class="owners-contact__email-input" id="owners-email" type="email" placeholder="kuklachev@gmail.com" required>
+            <label class="owners-contacts__email" for="owners-email">E-mail:*</label>
+            <input class="owners-contacts__email-input" id="owners-email" type="email" placeholder="kuklachev@gmail.com" required>
           </div>
           <div class="owners-contacts__wrapper owners-contacts__wrapper--phone-number">
-            <label class="owners-contact__phone-number" for="owners-phone-number">Телефон:*</label>
-            <input class="owners-contact__phone-number-input" id="owners-phone-number" type="text" placeholder="8 (960) 900-60-90" pattern="\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
+            <label class="owners-contacts__phone-number" for="owners-phone-number">Телефон:*</label>
+            <input class="owners-contacts__phone-number-input" id="owners-phone-number" type="text" placeholder="8 (960) 900-60-90" pattern="\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
           </div>
         </fieldset>
 
-        <fieldset class="questionnaire__coments coments">
+        <fieldset class="questionnaire__comments comments">
           <legend class="comments__title">Комментарий</legend>
           <textarea class="comments__input" rows="4">Расскажите обо всех повадках кота</textarea>
         </fieldset>
@@ -86,20 +86,20 @@
         <fieldset class="questionnaire__extra-fields extra-fields">
           <legend class="extra-fields__title">Дополнительно</legend>
           <div class="extra-fields__wrapper extra-fields__wrapper--sweetener">
-            <input class="extra-field__input visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked>
-            <label class="extra-field__label" for="sweetener">Сахарозаменитель</label>
+            <input class="extra-fields__input visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked>
+            <label class="extra-fields__label" for="sweetener">Сахарозаменитель</label>
           </div>
           <div class="extra-fields__wrapper extra-fields__wrapper--water">
-            <input class="extra-field__input visually-hidden" id="water" name="extra-field" type="checkbox" value="вода">
-            <label class="extra-field__label" for="water">Вода</label>
+            <input class="extra-fields__input visually-hidden" id="water" name="extra-field" type="checkbox" value="вода">
+            <label class="extra-fields__label" for="water">Вода</label>
           </div>
           <div class="extra-fields__wrapper extra-fields__wrapper--milk">
-            <input class="extra-field__input visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко">
-            <label class="extra-field__label" for="milk">Молоко</label>
+            <input class="extra-fields__input visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко">
+            <label class="extra-fields__label" for="milk">Молоко</label>
           </div>
           <div class="extra-fields__wrapper extra-fields__wrapper--vitamins">
-            <input class="extra-field__input visually-hidden" id="vitamins" name="extra-field" type="checkbox" value="витамины">
-            <label class="extra-field__label" for="vitamins">Витамины</label>
+            <input class="extra-fields__input visually-hidden" id="vitamins" name="extra-field" type="checkbox" value="витамины">
+            <label class="extra-fields__label" for="vitamins">Витамины</label>
           </div>
         </fieldset>
 
@@ -123,7 +123,7 @@
       </section>
 
       <div class="page-footer__links footer-links">
-        <img class="footer-link__logo company-logo__text" src="#" width="128" height="24" alt="Cat Energy">
+        <img class="footer-links__logo company-logo__text" src="#" width="128" height="24" alt="Cat Energy">
 
         <ul class="footer-links__list social-block">
           <li class="social-block__item">
