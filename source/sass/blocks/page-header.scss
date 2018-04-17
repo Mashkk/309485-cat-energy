@@ -1,0 +1,14 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 65px;
+
+  background-color: #fff;
+}
+
+.page-header__wrapper {
+  display: flex;
+  margin: 0 auto;
+}

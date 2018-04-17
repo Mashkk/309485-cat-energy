@@ -4,19 +4,21 @@
     <meta charset="utf-8">
     <title>Cat Energy</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
   </head>
 
   <body>
 
     <header class="page-header">
 
-      <a class="page-header__company-logo company-logo" href="#">
-        <img class="company-logo__image" src="#" width="33" height="38" alt="Cat Energy">
-        <img class="company-logo__text" src="#" width="101" height="18" alt="Cat Energy">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__company-logo company-logo" href="#">
+          <img class="company-logo__image" src="#" width="33" height="38" alt="Cat Energy">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link site-list__link--active">Главная</a>
@@ -35,11 +37,13 @@
       <h1 class="visually-hidden">Магазин функционального питания для котов Cat Energy</h1>
 
       <section class="product-promotion">
-        <h2 class="product-promotion__name">Функциональное питание для котов</h2>
+        <div class="product-promotion__wrapper">
+          <h2 class="product-promotion__name">Функциональное питание для котов</h2>
 
-        <p class="product-promotion__slogan">Занялся собой? Займись котом!</p>
-        <img class="product-promotion__image" src="#" width="280" height="270" alt="Cat Energy PRO со вкусом курицы">
-        <a class="product-promotion__button button" href="form.html">Подобрать программу</a>
+          <p class="product-promotion__slogan">Занялся собой? Займись котом!</p>
+          <img class="product-promotion__image" src="img\index-can-mobile@1x.png" width="280" height="271" alt="Cat Energy PRO со вкусом курицы">
+          <a class="product-promotion__button button" href="form.html">Подобрать программу</a>
+        </div>
       </section>
 
       <section class="diet-programs">
@@ -91,12 +95,12 @@
 
         <div class="live-demo__information demo-info">
           <div class="demo-info__wrapper demo-info__wrapper--weight">
-            <div class="demo-info__weight-value">5 кг</div>
-            <div class="demo-info__weight-description">Снижение веса</div>
+            <div class="demo-info__value">5 кг</div>
+            <div class="demo-info__description">снижение веса</div>
           </div>
           <div class="demo-info__wrapper demo-info__wrapper--time">
-            <div class="demo-info__time-value">60 дней</div>
-            <div class="demo-info__time-description">Затрачено времени</div>
+            <div class="demo-info__value">60 дней</div>
+            <div class="demo-info__description">затрачено времени</div>
           </div>
           <p class="demo-info__conclusion">Затраты на питание: 15 000 руб.</p>
         </div>
