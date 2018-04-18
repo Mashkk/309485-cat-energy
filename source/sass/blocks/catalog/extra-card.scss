@@ -1,0 +1,18 @@
+.extra-card {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include reset();
+}
+
+.extra-card__item {
+  padding: 15px 0 18px;
+  list-style: none;
+  border-bottom: 1px solid $gray-line;
+}
+
+.extra-card__title {
+  font: 400 16px/1 $oswald-font;
+  color: #000000;
+  text-transform: uppercase;
+}

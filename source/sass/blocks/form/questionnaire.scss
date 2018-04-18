@@ -1,0 +1,16 @@
+.questionnaire {
+  font: 400 16px/1.2 $oswald-font;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.questionnaire__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 25px 20px;
+  margin: 0;
+
+  border: none;
+  border-bottom: 1px solid $gray-line;
+}

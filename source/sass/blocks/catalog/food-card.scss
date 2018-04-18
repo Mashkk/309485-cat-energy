@@ -1,0 +1,31 @@
+.food-card {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 320px;
+
+  list-style: none outside;
+  padding: 0 20px 25px;
+
+  border-top: 1px solid $gray-line;
+}
+
+.food-card__stats {
+  margin-top: 25px;
+}
+
+.food-card__button--gray {
+  margin-top: 23px;
+
+  background-color: $gray;
+  color: #000000;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

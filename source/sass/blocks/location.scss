@@ -1,0 +1,32 @@
+.location {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.location__wrapper {
+  display: flex;
+  padding: 25px 20px;
+}
+
+.location__dealer-inv {
+  width: 50%;
+
+  font: 400 16px/1.2 $oswald-font;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.location__address {
+  width: 50%;
+  align-items: flex-end;
+}
+
+.location__map-wrapper {
+  position: relative;
+
+  width: 320px;
+  min-height: 365px;
+
+  background-color: $gray;
+}

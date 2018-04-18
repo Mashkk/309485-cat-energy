@@ -1,0 +1,25 @@
+.social-block {
+  display: flex;
+  justify-content: center;
+
+  width: 280px;
+
+  margin: 30px 0;
+  padding: 20px 0;
+
+  border: 1px solid $gray-line;
+}
+
+.social-block__item {
+  @include reset();
+  padding-right: 30px;
+  list-style: none outside;
+
+  line-height: 0;
+  font-size: 0;
+}
+
+.social-block__link {
+  text-decoration: none;
+
+}

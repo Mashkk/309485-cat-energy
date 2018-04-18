@@ -1,0 +1,19 @@
+.more-card {
+  border-bottom: 1px solid $gray-line;
+  padding-top: 80px;
+}
+
+.more-card__text {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 280px;
+
+  text-align: center;
+  margin: 0 auto;
+
+  &--b {
+    font: 400 16px/1.2 $oswald-font;
+    padding-bottom: 14px;
+  }
+}

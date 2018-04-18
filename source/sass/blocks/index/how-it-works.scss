@@ -1,11 +1,10 @@
 .how-it-works {
   padding: 0 20px;
-  margin-bottom: 42px;
 }
 
 .how-it-works__title {
   font: $title-font;
-  color: #000;
+  color: #000000;
 
   margin: 0;
   margin-bottom: 33px;
@@ -25,22 +24,22 @@
 
   width: 280px;
 
-  padding: 0;
+  @include reset();
   padding-left: 80px;
-  margin: 0;
   margin-bottom: 26px;
 
   list-style: none;
-    &::before {
-      content: "";
-      position: absolute;
 
-      width: 60px;
-      height: 60px;
+  &::before {
+    content: "";
+    position: absolute;
 
-      left: 0;
-      top: 0;
+    width: 60px;
+    height: 60px;
 
-      background-color: $green;
-    }
+    left: 0;
+    top: 0;
+
+    background-color: $green;
+  }
 }

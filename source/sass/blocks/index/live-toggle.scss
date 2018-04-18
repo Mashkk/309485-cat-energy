@@ -1,0 +1,34 @@
+.live-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-toggle__switch {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 84px;
+  height: 14px;
+
+  margin: 0 20px;
+
+  border: 1px solid #000000;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.live-toggle__button {
+  @include reset;
+  padding-bottom: 3px;
+  border: 1px solid transparent;
+  background-color: transparent;
+
+  font: 400 16px/1.3 $oswald-font;
+  color: #000000;
+  text-transform: uppercase;
+
+  &:hover {
+    border-bottom: 1px solid #000000;
+  }
+}
