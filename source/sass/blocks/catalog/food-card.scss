@@ -11,7 +11,29 @@
 }
 
 .food-card__stats {
+  width: 140px;
+
   margin-top: 25px;
+  border-collapse: collapse;
+
+  font-size: 12px;
+}
+
+.food-card__title {
+  text-align: left;
+  margin-right: 67px;
+  padding-bottom: 5px;
+}
+
+.food-card__title-link {
+  text-decoration: none;
+  font: 400 16px/1.2 $oswald-font;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.food-card__item--right {
+  text-align: right;
 }
 
 .food-card__button--gray {

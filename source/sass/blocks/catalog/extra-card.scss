@@ -15,4 +15,17 @@
   font: 400 16px/1 $oswald-font;
   color: #000000;
   text-transform: uppercase;
+  text-align: left;
+
+  padding-bottom: 13px;
+}
+
+.extra-card__table {
+  width: 280px;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.extra-card__data--right {
+  text-align: right;
 }

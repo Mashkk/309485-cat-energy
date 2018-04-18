@@ -1,4 +1,9 @@
 .questionnaire {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+
   font: 400 16px/1.2 $oswald-font;
   color: #000000;
   text-transform: uppercase;
@@ -12,5 +17,37 @@
   margin: 0;
 
   border: none;
+}
+
+.questionnaire__item {
+  display: flex;
+  width: 280px;
+  margin-bottom: 15px;
+}
+
+.questionnaire__title {
+  font: 400 24px/1 $oswald-font;
+  text-transform: initial;
+  padding: 33px 0 30px;
+}
+
+.questionnaire__fieldset--pet-stats,
+.questionnaire__fieldset--pets-problems {
   border-bottom: 1px solid $gray-line;
+}
+
+.questionnaire__button {
+  margin: 24px auto;
+
+}
+
+.questionnaire__notice {
+  display: inline-block;
+  vertical-align: middle;
+
+  margin: 0 auto;
+  padding: 0;
+
+  font: $text-font;
+  text-transform: initial;
 }

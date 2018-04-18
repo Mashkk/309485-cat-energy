@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Cat Energy</title>
     <link href="css/style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
   </head>
 
   <body class="form-page">
@@ -54,23 +53,23 @@
           </div>
         </fieldset>
 
-        <fieldset class="questionnaire__fieldset questionnaire__fieldset--pets-problems pets-problems">
-          <div class="pets-problems__wrapper pets-problems__wrapper--losing-weight">
-            <input class="pets-problems__input visually-hidden" id="losing-weight" name="pets-problems" type="radio" value="losing-weight" checked>
-            <label class="pets-problems__label" for="losing-weight">Похудение</label>
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--pets-problems check-form">
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="losing-weight" name="pets-problems" type="radio" value="losing-weight" checked>
+            <label class="check-form__label" for="losing-weight">Похудение</label>
           </div>
-          <div class="pets-problems__wrapper pets-problems__wrapper--gain-weight">
-            <input class="pets-problems__input visually-hidden" id="gain-weight" name="pets-problems" type="radio" value="gain-weight">
-            <label class="pets-problems__label" for="gain-weight">Набор массы</label>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="gain-weight" name="pets-problems" type="radio" value="gain-weight">
+            <label class="check-form__label" for="gain-weight">Набор массы</label>
           </div>
-          <div class="pets-problems__wrapper pets-problems__wrapper--indefinite">
-            <input class="pets-problems__input visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite">
-            <label class="pets-problems__label" for="indefinite">Не знаю (нужен ваш совет)</label>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite">
+            <label class="check-form__label" for="indefinite">Не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
 
-        <fieldset class="questionnaire__fieldset questionnaire__fieldset--owners-contacts text-form">
-          <legend class="text-form__title">Контактные данные (владельца кота)</legend>
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line text-form">
+          <legend class="questionnaire__title">Контактные данные (владельца кота)</legend>
           <div class="questionnaire__item text-form__wrapper">
             <label class="text-form__label" for="owners-email">E-mail:*</label>
             <input class="text-form__input" id="owners-email" type="email" placeholder="kuklachev@gmail.com" required>
@@ -81,37 +80,37 @@
           </div>
         </fieldset>
 
-        <fieldset class="questionnaire__fieldset questionnaire__fieldset--comments comments">
-          <legend class="comments__title">Комментарий</legend>
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line comments">
+          <legend class="questionnaire__title">Комментарий</legend>
           <textarea class="comments__input" rows="4">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
-        <fieldset class="questionnaire__fieldset questionnaire__fieldset--extra-fields extra-fields">
-          <legend class="extra-fields__title">Дополнительно</legend>
-          <div class="extra-fields__wrapper extra-fields__wrapper--sweetener">
-            <input class="extra-fields__input visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked>
-            <label class="extra-fields__label" for="sweetener">Сахарозаменитель</label>
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line check-form">
+          <legend class="questionnaire__title">Дополнительно</legend>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked>
+            <label class="check-form__label" for="sweetener">Сахарозаменитель</label>
           </div>
-          <div class="extra-fields__wrapper extra-fields__wrapper--water">
-            <input class="extra-fields__input visually-hidden" id="water" name="extra-field" type="checkbox" value="вода">
-            <label class="extra-fields__label" for="water">Вода</label>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="water" name="extra-field" type="checkbox" value="вода">
+            <label class="check-form__label" for="water">Вода</label>
           </div>
-          <div class="extra-fields__wrapper extra-fields__wrapper--milk">
-            <input class="extra-fields__input visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко">
-            <label class="extra-fields__label" for="milk">Молоко</label>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко">
+            <label class="check-form__label" for="milk">Молоко</label>
           </div>
-          <div class="extra-fields__wrapper extra-fields__wrapper--vitamins">
-            <input class="extra-fields__input visually-hidden" id="vitamins" name="extra-field" type="checkbox" value="витамины">
-            <label class="extra-fields__label" for="vitamins">Витамины</label>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="vitamins" name="extra-field" type="checkbox" value="витамины">
+            <label class="check-form__label" for="vitamins">Витамины</label>
           </div>
         </fieldset>
 
         <button class="questionnaire__button button" type="submit">Отправить заявку</button>
-        <span class="questionnaire__notice">*&dash;Обязательные поля</span>
+        <p class="questionnaire__notice">* — Обязательные поля</p>
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--inner">
 
       <section class="page-footer__location location">
         <h2 class="visually-hidden">Как нас найти</h2>
