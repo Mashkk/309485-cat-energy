@@ -32,15 +32,18 @@
   color: $black-text;
   text-decoration: none;
   text-transform: uppercase;
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
-    &:active {
-      opacity: 0.3;
-    }
-    &--active {
-      border-bottom: 2px solid $green;
-      pointer-events: none;
-    }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    border-bottom: 2px solid $green;
+    pointer-events: none;
+  }
 }
