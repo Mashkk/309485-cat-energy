@@ -3,19 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Cat Energy</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="form-page">
 
     <header class="page-header">
 
-      <a class="page-header__company-logo company-logo" href="index.html">
-        <img class="company-logo__image" src="#" width="33" height="38" alt="Cat Energy">
-        <img class="company-logo__text" src="#" width="101" height="18" alt="Cat Energy">
-      </a>
+      <div class="page-header__wrapper">
+        <a class="page-header__company-logo company-logo" href="index.html">
+          <img class="company-logo__image" src="#" width="33" height="38" alt="Cat Energy">
+        </a>
+        <button class="page-header__toggle" type="button">Открыть меню</button>
+      </div>
 
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -31,84 +33,84 @@
     </header>
 
     <main class="form-page-main">
-      <h1 class="form-page-main__title">Подбор программы</h1>
+      <h1 class="form-page-main__title title">Подбор программы</h1>
       <p class="form-page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
 
       <form class="questionnaire" action="https://echo.htmlacademy.ru" method="post">
 
-        <fieldset class="questionnaire__pet-stats pet-stats">
-          <div class="pet-stats__wrapper pet-stats__wrapper--name">
-            <label class="pet-stat__name" for="pet-name">Имя:*</label>
-            <input class="pet-stat__name-field" id="pet-name" type="text" placeholder="Барсик" required>
+        <fieldset class="questionnaire__fieldset text-form">
+          <div class="questionnaire__item text-form__wrapper">
+            <label class="text-form__label" for="pet-name">Имя:*</label>
+            <input class="text-form__input" id="pet-name" type="text" placeholder="Барсик" required>
           </div>
-          <div class="pet-stats__wrapper pet-stats__wrapper--weight">
-            <label class="pet-stat__weight" for="pet-weight">Вес (кг):*</label>
-            <input class="pet-stat__weight-input" id="pet-weight" type="text" placeholder="7" pattern="[1-9]{1,2}" required>
+          <div class="questionnaire__item text-form__wrapper">
+            <label class="text-form__label" for="pet-weight">Вес (кг):*</label>
+            <input class="text-form__input" id="pet-weight" type="text" placeholder="7" pattern="[1-9]{1,2}" required>
           </div>
-          <div class="pet-stats__wrapper pet-stats__wrapper--age">
-            <label class="pet-stat__age" for="pet-age">Возраст (лет):</label>
-            <input class="pet-stat__age-input" id="pet-age" type="text" placeholder="7" pattern="[1-9]{1,2}">
-          </div>
-        </fieldset>
-
-        <fieldset class="questionnaire__pets-problems pets-problems">
-          <div class="pets-problems__wrapper pets-problems__wrapper--losing-weight">
-            <input class="pets-problem__input visually-hidden" id="losing-weight" name="pets-problem" type="radio" value="losing-weight" checked>
-            <label class="pets-problem__label" for="losing-weight">Похудение</label>
-          </div>
-          <div class="pets-problems__wrapper pets-problems__wrapper--gain-weight">
-            <input class="pets-problem__input visually-hidden" id="gain-weight" name="pets-problem" type="radio" value="gain-weight">
-            <label class="pets-problem__label" for="gain-weight">Набор массы</label>
-          </div>
-          <div class="pets-problems__wrapper pets-problems__wrapper--indefinite">
-            <input class="pets-problem__input visually-hidden" id="indefinite" name="pets-problem" type="radio" value="indefinite">
-            <label class="pets-problem__label" for="indefinite">Не знаю (нужен ваш совет)</label>
+          <div class="questionnaire__item text-form__wrapper">
+            <label class="text-form__label" for="pet-age">Возраст (лет):</label>
+            <input class="text-form__input" id="pet-age" type="text" placeholder="7" pattern="[1-9]{1,2}">
           </div>
         </fieldset>
 
-        <fieldset class="questionnaire__owners-contacts owners-contacts">
-          <legend class="owners-contacts__title">Контактные данные (владельца кота)</legend>
-          <div class="owners-contacts__wrapper owners-contacts__wrapper--email">
-            <label class="owners-contact__email" for="owners-email">E-mail:*</label>
-            <input class="owners-contact__email-input" id="owners-email" type="email" placeholder="kuklachev@gmail.com" required>
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--gray-border check-form">
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="losing-weight" name="pets-problems" type="radio" value="losing-weight" checked>
+            <label class="check-form__label" for="losing-weight">Похудение</label>
           </div>
-          <div class="owners-contacts__wrapper owners-contacts__wrapper--phone-number">
-            <label class="owners-contact__phone-number" for="owners-phone-number">Телефон:*</label>
-            <input class="owners-contact__phone-number-input" id="owners-phone-number" type="text" placeholder="8 (960) 900-60-90" pattern="\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="gain-weight" name="pets-problems" type="radio" value="gain-weight">
+            <label class="check-form__label" for="gain-weight">Набор массы</label>
+          </div>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite">
+            <label class="check-form__label" for="indefinite">Не знаю (нужен ваш совет)</label>
           </div>
         </fieldset>
 
-        <fieldset class="questionnaire__coments coments">
-          <legend class="comments__title">Комментарий</legend>
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line text-form">
+          <legend class="questionnaire__title title title--small">Контактные данные (владельца кота)</legend>
+          <div class="questionnaire__item text-form__wrapper">
+            <label class="text-form__label" for="owners-email">E-mail:*</label>
+            <input class="text-form__input" id="owners-email" type="email" placeholder="kuklachev@gmail.com" required>
+          </div>
+          <div class="questionnaire__item text-form__wrapper">
+            <label class="text-form__label" for="owners-phone-number">Телефон:*</label>
+            <input class="text-form__input" id="owners-phone-number" type="text" placeholder="8 (960) 900-60-90" pattern="\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line comments">
+          <legend class="questionnaire__title title title--small">Комментарий</legend>
           <textarea class="comments__input" rows="4">Расскажите обо всех повадках кота</textarea>
         </fieldset>
 
-        <fieldset class="questionnaire__extra-fields extra-fields">
-          <legend class="extra-fields__title">Дополнительно</legend>
-          <div class="extra-fields__wrapper extra-fields__wrapper--sweetener">
-            <input class="extra-field__input visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked>
-            <label class="extra-field__label" for="sweetener">Сахарозаменитель</label>
+        <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line check-form">
+          <legend class="questionnaire__title title title--small">Дополнительно</legend>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked>
+            <label class="check-form__label" for="sweetener">Сахарозаменитель</label>
           </div>
-          <div class="extra-fields__wrapper extra-fields__wrapper--water">
-            <input class="extra-field__input visually-hidden" id="water" name="extra-field" type="checkbox" value="вода">
-            <label class="extra-field__label" for="water">Вода</label>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="water" name="extra-field" type="checkbox" value="вода">
+            <label class="check-form__label" for="water">Вода</label>
           </div>
-          <div class="extra-fields__wrapper extra-fields__wrapper--milk">
-            <input class="extra-field__input visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко">
-            <label class="extra-field__label" for="milk">Молоко</label>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко">
+            <label class="check-form__label" for="milk">Молоко</label>
           </div>
-          <div class="extra-fields__wrapper extra-fields__wrapper--vitamins">
-            <input class="extra-field__input visually-hidden" id="vitamins" name="extra-field" type="checkbox" value="витамины">
-            <label class="extra-field__label" for="vitamins">Витамины</label>
+          <div class="questionnaire__item check-form__wrapper">
+            <input class="visually-hidden" id="vitamins" name="extra-field" type="checkbox" value="витамины">
+            <label class="check-form__label" for="vitamins">Витамины</label>
           </div>
         </fieldset>
 
         <button class="questionnaire__button button" type="submit">Отправить заявку</button>
-        <span class="questionnaire__notice">*&dash;Обязательные поля</span>
+        <p class="questionnaire__notice text-font">* — Обязательные поля</p>
       </form>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-footer--inner">
 
       <section class="page-footer__location location">
         <h2 class="visually-hidden">Как нас найти</h2>
@@ -118,12 +120,12 @@
         </div>
 
         <div class="location__map-wrapper">
-          <img class="location__map-image" src="#" width="320" height="365" alt="Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <img class="location__map-image" src="img/bg-map-mobile@1x.png" width="320" height="365" alt="Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </div>
       </section>
 
       <div class="page-footer__links footer-links">
-        <img class="footer-link__logo company-logo__text" src="#" width="128" height="24" alt="Cat Energy">
+        <img class="footer-links__logo company-logo__text" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
 
         <ul class="footer-links__list social-block">
           <li class="social-block__item">

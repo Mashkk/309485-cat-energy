@@ -1,0 +1,29 @@
+.extra-card {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include reset();
+}
+
+.extra-card__item {
+  padding: 15px 0 18px;
+  list-style: none;
+  border-bottom: 1px solid $gray-line;
+}
+
+.extra-card__title {
+  text-transform: uppercase;
+  text-align: left;
+
+  padding-bottom: 13px;
+}
+
+.extra-card__table {
+  width: 280px;
+  border-collapse: collapse;
+  margin-bottom: 12px;
+}
+
+.extra-card__table-value--right {
+  text-align: right;
+}

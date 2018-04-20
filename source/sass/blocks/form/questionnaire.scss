@@ -1,0 +1,47 @@
+.questionnaire {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.questionnaire__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 25px 20px;
+  margin: 0;
+
+  border: none;
+}
+
+.questionnaire__item {
+  display: flex;
+  width: 280px;
+  margin-bottom: 15px;
+}
+
+.questionnaire__title {
+  text-transform: initial;
+  padding: 33px 0 30px;
+}
+
+.questionnaire__fieldset--pet-stats,
+.questionnaire__fieldset--pets-problems {
+  border-bottom: 1px solid $gray-line;
+}
+
+.questionnaire__button {
+  margin: 24px auto;
+}
+
+.questionnaire__notice {
+  display: inline-block;
+  vertical-align: middle;
+
+  margin: 0 auto;
+  padding: 0;
+
+  text-transform: initial;
+}

@@ -1,0 +1,41 @@
+.how-it-works {
+  padding: 0 20px;
+}
+
+.how-it-works__title {
+  margin-bottom: 33px;
+  padding: 0;
+}
+
+.how-it-works__list {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+}
+
+.how-it-works__item {
+  position: relative;
+
+  width: 280px;
+
+  @include reset();
+  padding-left: 80px;
+  margin-bottom: 26px;
+
+  list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 60px;
+    height: 60px;
+
+    left: 0;
+    top: 0;
+
+    background-color: $green;
+  }
+}

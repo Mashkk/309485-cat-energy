@@ -1,0 +1,44 @@
+.demo-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.demo-info__wrapper {
+  position: relative;
+
+  width: 124px;
+  text-align: center;
+}
+
+.demo-info__value {
+  line-height: 1;
+  padding: 18px 0;
+
+  border: 1px solid $gray-line;
+  border-radius: 3px;
+}
+
+.demo-info__description {
+  position: absolute;
+
+  top: 54px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: inline-block;
+  vertical-align: middle;
+  background-color: $gray;
+
+  padding: 0 15px;
+
+  font-size: 12px;
+  line-height: 1;
+}
+
+.demo-info__conclusion {
+  width: 100%;
+  text-align: center;
+
+  padding-top: 20px;
+}

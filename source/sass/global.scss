@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: $oswald-font;
+  font-size: 16px;
+  line-height: 1.2;
+  color: $black-text;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}

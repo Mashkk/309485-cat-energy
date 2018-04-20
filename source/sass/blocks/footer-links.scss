@@ -1,0 +1,17 @@
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 35px 20px 20px;
+
+  background-color: $gray;
+}
+
+.company-logo__image--footer {
+  align-items: center;
+}
+
+.footer-links__list {
+  padding: 25px 0;
+}
