@@ -10,3 +10,14 @@
     line-height: 1;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+    line-height: 1;
+
+    &--small {
+      font-size: 36px;
+    }
+  }
+}

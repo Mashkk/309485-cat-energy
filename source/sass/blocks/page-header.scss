@@ -1,6 +1,7 @@
 .page-header {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   width: 100%;
   min-height: 65px;
@@ -8,7 +9,51 @@
   background-color: #ffffff;
 }
 
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 0 110px;
+  }
+}
+
 .page-header__wrapper {
   display: flex;
+  justify-content: center;
+
+  padding: 0 20px;
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__wrapper {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.page-header__company-logo {
+  padding-top: 15px;
+}
+
+.page-header__toggle {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 120px;
+  height: 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__toggle {
+    display: none;
+  }
 }

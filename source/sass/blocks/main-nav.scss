@@ -1,3 +1,9 @@
-.main-nav {
+ .main-nav {
   margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    margin: 0;
+  }
 }

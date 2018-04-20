@@ -1,6 +1,6 @@
 .program {
   position: relative;
-  width: 280px;
+  width: 100%;
 
   margin-bottom: 20px;
   padding: 30px 20px 24px 20px;
@@ -20,7 +20,7 @@
 
     top: 22px;
     left: 30px;
-    background: url("../../../img/icon-cat-slim.svg") center no-repeat;
+    background: url("../img/icon-cat-slim.svg") center no-repeat;
   }
 
   &--gain-weight::after {
@@ -29,7 +29,7 @@
 
     top: 35px;
     left: 13px;
-    background: url("../../../img/icon-cat-pro.svg") center no-repeat;
+    background: url("../img/icon-cat-pro.svg") center no-repeat;
   }
 }
 
