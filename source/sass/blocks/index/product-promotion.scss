@@ -4,7 +4,7 @@
 
   margin-bottom: 22px;
 
-  background: url("../../../img/index-background-mobile@1x.jpg") top no-repeat;
+  background: url("../img/index-background-mobile@1x.jpg") top no-repeat;
 }
 
 .product-promotion__wrapper {
@@ -14,15 +14,12 @@
 
 .product-promotion__name,
 .product-promotion__slogan {
-  font: 400 36px/1 $oswald-font;
   color: #ffffff;
+  line-height: 1;
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 .product-promotion__name {
-  font-size: 36px;
   margin-bottom: 20px;
 }
 

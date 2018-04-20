@@ -12,8 +12,6 @@
 }
 
 .extra-card__title {
-  font: 400 16px/1 $oswald-font;
-  color: #000000;
   text-transform: uppercase;
   text-align: left;
 
@@ -26,6 +24,6 @@
   margin-bottom: 12px;
 }
 
-.extra-card__data--right {
+.extra-card__table-value--right {
   text-align: right;
 }

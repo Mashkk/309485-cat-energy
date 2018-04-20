@@ -48,8 +48,6 @@
 }
 
 .program__name {
-  font: 400 24px/1.5 $oswald-font;
-  color: #000000;
   text-transform: uppercase;
 
   margin: 0 0 24px 71px;
@@ -57,8 +55,7 @@
 }
 
 .program__description {
-  padding: 0;
-  margin: 0;
+  @include reset();
   margin-bottom: 20px;
 }
 
@@ -66,9 +63,6 @@
   display: inline-block;
 
   width: 100%;
-
-  font: 400 16px/1 $oswald-font;
-  color: $black-text;
   text-decoration: none;
   text-transform: uppercase;
 

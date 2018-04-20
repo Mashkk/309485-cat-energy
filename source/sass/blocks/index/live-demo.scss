@@ -3,11 +3,6 @@
   background-color: $gray;
 }
 
-.live-demo__title {
-  font: $title-font;
-  color: #000000;
-}
-
 .live-demo__description {
   @include reset();
   margin-bottom: 30px;

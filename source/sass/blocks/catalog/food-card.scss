@@ -4,7 +4,7 @@
 
   width: 320px;
 
-  list-style: none outside;
+  list-style: none;
   padding: 0 20px 25px;
 
   border-top: 1px solid $gray-line;
@@ -27,7 +27,8 @@
 
 .food-card__title-link {
   text-decoration: none;
-  font: 400 16px/1.2 $oswald-font;
+  font-family: $oswald-font;
+  font-size: 16px;
   color: #000000;
   text-transform: uppercase;
 }

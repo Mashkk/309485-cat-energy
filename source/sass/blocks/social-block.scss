@@ -11,9 +11,8 @@
 }
 
 .social-block__item {
-  @include reset();
+  @include reset-list();
   padding-right: 30px;
-  list-style: none outside;
 
   line-height: 0;
   font-size: 0;
