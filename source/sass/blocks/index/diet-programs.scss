@@ -1,11 +1,27 @@
 .diet-programs {
+  margin: 0 auto;
   margin-bottom: 34px;
 }
 
 .diet-programs__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
-  margin: 0 auto;
-  padding: 0;
+  @include reset-list();
+  margin: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .diet-programs__list {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .diet-programs__list {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin: 0 111px;
+  }
 }
