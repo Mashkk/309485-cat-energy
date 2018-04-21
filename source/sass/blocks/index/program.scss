@@ -42,9 +42,11 @@
   .program {
     width: 50%;
   }
+
   .program:nth-child(even) {
     margin-left: 40px;
   }
+
   .program:nth-child(odd) {
     margin-right: 40px;
   }
@@ -59,20 +61,7 @@
     top: 80px;
     right: 92px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .program--losing-weight::after {
-    width: 70px;
-    height: 97px;
-
-    right: auto;
-    top: 41px;
-    left: 66px;
-  }
-}
-
-@media (min-width: $tablet-width) {
   .program--gain-weight::after {
     width: 268px;
     height: 112px;
@@ -84,6 +73,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .program--losing-weight::after {
+    width: 70px;
+    height: 97px;
+
+    right: auto;
+    top: 41px;
+    left: 66px;
+  }
+
   .program--gain-weight::after {
     width: 134px;
     height: 56px;
