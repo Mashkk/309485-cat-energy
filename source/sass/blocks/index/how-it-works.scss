@@ -1,16 +1,19 @@
 .how-it-works {
   margin: 0 20px;
+  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
   .how-it-works {
     margin: 0 30px;
+    margin-bottom: 35px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .how-it-works {
     margin: 0 110px;
+    margin-bottom: 22px;
   }
 }
 
