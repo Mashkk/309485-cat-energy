@@ -1,3 +1,10 @@
 .catalog-page-main__title {
-  padding: 0 20px;
+  padding: $mobile-padding;
+  margin: 30px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page-main__title {
+    padding: $tablet-padding;
+  }
 }

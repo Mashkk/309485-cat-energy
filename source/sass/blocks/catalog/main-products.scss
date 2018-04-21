@@ -1,6 +1,16 @@
+.main-products {
+}
+
 .main-products__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
-  @include reset();
+  @include reset-list();
+}
+
+@media (min-width: $tablet-width) {
+  .main-products__list {
+    padding: $tablet-padding;
+  }
 }
