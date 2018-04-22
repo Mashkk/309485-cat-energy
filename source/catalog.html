@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width"> -->
     <title>Cat Energy</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -242,11 +243,11 @@
             <div class="food-card__wrapper">
 
               <div class="more-card__description">
-                <b class="more-card__text more-card__text--b">Показать еще 100500 товаров</b>
+                <p class="more-card__text more-card__text--bold">Показать еще 100500 товаров</p>
                 <p class="more-card__text text-font">На самом деле вкусов гораздо больше!</p>
               </div>
 
-              <a class="food-card__button food-card__button--gray button" href="#">Показать все</a>
+              <a class="food-card__button-order food-card__button-order--gray button" href="#">Показать все</a>
             </div>
           </li>
         </ul>
@@ -257,9 +258,8 @@
 
         <ul class="extra-products__list extra-card">
           <li class="extra-card__item">
-            <!-- Тоже возможно просто списком -->
+            <h3 class="extra-card__title">Сахарозаменитель</h3>
             <table class="extra-card__table">
-              <caption class="extra-card__title">Сахарозаменитель</caption>
               <tr class="extra-card__row text-font">
                 <td class="extra-card__table-value">1 упаковка (100 г)</td>
                 <td class="extra-card__table-value extra-card__table-value--right">100 Р.</td>
@@ -269,8 +269,8 @@
           </li>
 
           <li class="extra-card__item">
+            <h3 class="extra-card__title">Питьевая вода</h3>
             <table class="extra-card__table">
-              <caption class="extra-card__title">Питьевая вода</caption>
               <tr class="extra-card__row text-font">
                 <td class="extra-card__table-value">5 литров</td>
                 <td class="extra-card__table-value extra-card__table-value--right">50 Р.</td>
@@ -280,8 +280,8 @@
           </li>
 
           <li class="extra-card__item">
+            <h3 class="extra-card__title">Молоко</h3>
             <table class="extra-card__table">
-              <caption class="extra-card__title">Молоко</caption>
               <tr class="extra-card__row text-font">
                 <td class="extra-card__table-value">1 литр</td>
                 <td class="extra-card__table-value extra-card__table-value--right">100 Р.</td>
@@ -291,8 +291,8 @@
           </li>
 
           <li class="extra-card__item">
+            <h3 class="extra-card__title">Витамины</h3>
             <table class="extra-card__table">
-              <caption class="extra-card__title">Витамины</caption>
               <tr class="extra-card__row text-font">
                 <td class="extra-card__table-value">1 упаковка (30 г)</td>
                 <td class="extra-card__table-value extra-card__table-value--right">300 Р.</td>
@@ -300,6 +300,7 @@
             </table>
             <a class="extra-card__button-order button" href="#">Заказать</a>
           </li>
+        </ul>
 
         <div class="extra-products__bonus">
           <p class="extra-products__bonus-description text-font">Закажите все
@@ -308,13 +309,13 @@
       </section>
     </main>
 
-    <footer class="page-footer page-footer--inner">
+    <footer class="page-footer">
 
       <section class="page-footer__location location">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="location__wrapper">
           <div class="location__dealer-inv">Приглашаем к сотрудничеству дилеров!</div>
-          <div class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+          <div class="location__address text-font">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
         </div>
 
         <div class="location__map-wrapper">
@@ -323,26 +324,35 @@
       </section>
 
       <div class="page-footer__links footer-links">
-        <a class="page-footer__company-logo company-logo" href="index.html">
-          <img class="company-logo__image company-logo__image--footer" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+        <a class="footer-links__logo-wrapper" href="index.html">
+          <img class="footer-links__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>
 
         <ul class="footer-links__list social-block">
           <li class="social-block__item">
-            <a class="social-block__link social-block__link--vk" href="#">Ссылка на нас в Вконтакте</a>
+            <a class="social-block__link social-block__link--vk" href="#">
+              <img src="img/icon-vk-mobile.svg" width="33" height="33">
+              Ссылка на нас в Вконтакте
+            </a>
           </li>
           <li class="social-block__item">
-            <a class="social-block__link social-block__link--instagram" href="#">Ссылка на нас в Инстаграм</a>
+            <a class="social-block__link social-block__link--instagram" href="#">
+              <img src="img/icon-insta-mobile.svg" width="33" height="33">
+              Ссылка на нас в Инстаграм
+            </a>
           </li>
           <li class="social-block__item">
-            <a class="social-block__link social-block__link--facebook" href="#">ССлыка на нас в Фэйсбук</a>
+            <a class="social-block__link social-block__link--facebook" href="#">
+              Ссылка на нас в Фэйсбук
+              <img src="img/icon-fb-mobile.svg" width="33" height="33">
+            </a>
           </li>
         </ul>
 
         <div class="footer-links__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__link-image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+            <img class="copyright__link-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>

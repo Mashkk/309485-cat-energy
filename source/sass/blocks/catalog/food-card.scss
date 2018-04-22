@@ -10,8 +10,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  width: 280px;
-  margin: 0 auto;
+  height: 100%;
 }
 
 .food-card__stats {
@@ -43,8 +42,12 @@
   text-align: right;
 }
 
-.food-card__button--gray {
-  margin-top: 23px;
+.food-card__button-order {
+  width: 100%;
+}
+
+.food-card__button-order--gray {
+  margin-top: auto;
 
   background-color: $gray;
   color: #000000;
@@ -61,11 +64,9 @@
 
 @media (min-width: $tablet-width) {
   .food-card {
-    flex-direction: column;
-
     width: 324px;
 
-    margin-top: 141px;
+    margin: 142px 30px 0;
     padding: 0 37px 40px;
     border: none;
     background-color: $gray;
@@ -90,14 +91,19 @@
     margin: 160px auto 15px;
   }
 
-  .food-card__button-order {
-    width: 249px;
-  }
-
   .food-card__image {
     position: absolute;
 
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-card {
+    width: 245px;
+
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }

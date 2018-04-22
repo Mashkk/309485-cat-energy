@@ -8,3 +8,9 @@
     padding: $tablet-padding;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog-page-main__title {
+    padding: $desktop-padding;
+  }
+}

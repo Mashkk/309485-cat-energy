@@ -13,7 +13,7 @@
 
       <div class="page-header__wrapper">
         <a class="page-header__company-logo company-logo" href="index.html">
-          <img class="company-logo__image" src="#" width="33" height="38" alt="Cat Energy">
+          <img class="company-logo__image" src="img/logo-mobile.svg" width="200" height="40" alt="Cat Energy">
         </a>
         <button class="page-header__toggle" type="button">Открыть меню</button>
       </div>
@@ -39,85 +39,95 @@
 
       <form class="questionnaire" action="https://echo.htmlacademy.ru" method="post">
 
-        <fieldset class="questionnaire__fieldset text-form">
-          <div class="questionnaire__item text-form__wrapper">
-            <label class="text-form__label" for="pet-name">Имя:*</label>
-            <input class="text-form__input" id="pet-name" type="text" placeholder="Барсик" required>
-          </div>
-          <div class="questionnaire__item text-form__wrapper">
-            <label class="text-form__label" for="pet-weight">Вес (кг):*</label>
-            <input class="text-form__input" id="pet-weight" type="text" placeholder="7" pattern="[1-9]{1,2}" required>
-          </div>
-          <div class="questionnaire__item text-form__wrapper">
-            <label class="text-form__label" for="pet-age">Возраст (лет):</label>
-            <input class="text-form__input" id="pet-age" type="text" placeholder="7" pattern="[1-9]{1,2}">
-          </div>
-        </fieldset>
+        <div class="questionnaire__fieldsets-wrapper">
+          <fieldset class="questionnaire__fieldset questionnaire__fieldset--combo text-form">
+            <div class="questionnaire__item text-form__wrapper">
+              <label class="text-form__label" for="pet-name">Имя:*</label>
+              <input class="text-form__input" id="pet-name" type="text" placeholder="Барсик" required>
+            </div>
+            <div class="questionnaire__item text-form__wrapper">
+              <label class="text-form__label" for="pet-weight">Вес (кг):*</label>
+              <input class="text-form__input" id="pet-weight" type="text" placeholder="7" pattern="[1-9]{1,2}" required>
+            </div>
+            <div class="questionnaire__item text-form__wrapper">
+              <label class="text-form__label" for="pet-age">Возраст (лет):</label>
+              <input class="text-form__input" id="pet-age" type="text" placeholder="7" pattern="[1-9]{1,2}">
+            </div>
+          </fieldset>
 
-        <fieldset class="questionnaire__fieldset questionnaire__fieldset--gray-border check-form">
-          <div class="questionnaire__item check-form__wrapper">
-            <input class="visually-hidden" id="losing-weight" name="pets-problems" type="radio" value="losing-weight" checked>
-            <label class="check-form__label" for="losing-weight">Похудение</label>
-          </div>
-          <div class="questionnaire__item check-form__wrapper">
-            <input class="visually-hidden" id="gain-weight" name="pets-problems" type="radio" value="gain-weight">
-            <label class="check-form__label" for="gain-weight">Набор массы</label>
-          </div>
-          <div class="questionnaire__item check-form__wrapper">
-            <input class="visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite">
-            <label class="check-form__label" for="indefinite">Не знаю (нужен ваш совет)</label>
-          </div>
-        </fieldset>
+          <fieldset class="questionnaire__fieldset questionnaire__fieldset--combo questionnaire__fieldset--gray-border check-form">
+            <div class="questionnaire__item check-form__wrapper">
+              <input class="visually-hidden" id="losing-weight" name="pets-problems" type="radio" value="losing-weight" checked>
+              <label class="check-form__label" for="losing-weight">Похудение</label>
+            </div>
+            <div class="questionnaire__item check-form__wrapper">
+              <input class="visually-hidden" id="gain-weight" name="pets-problems" type="radio" value="gain-weight">
+              <label class="check-form__label" for="gain-weight">Набор массы</label>
+            </div>
+            <div class="questionnaire__item check-form__wrapper">
+              <input class="visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite">
+              <label class="check-form__label" for="indefinite">Не знаю (нужен ваш совет)</label>
+            </div>
+          </fieldset>
+        </div>
 
         <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line text-form">
           <legend class="questionnaire__title title title--small">Контактные данные (владельца кота)</legend>
-          <div class="questionnaire__item text-form__wrapper">
-            <label class="text-form__label" for="owners-email">E-mail:*</label>
-            <input class="text-form__input" id="owners-email" type="email" placeholder="kuklachev@gmail.com" required>
-          </div>
-          <div class="questionnaire__item text-form__wrapper">
-            <label class="text-form__label" for="owners-phone-number">Телефон:*</label>
-            <input class="text-form__input" id="owners-phone-number" type="text" placeholder="8 (960) 900-60-90" pattern="\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
+          <div class="questionnaire__fieldset-wrapper">
+            <div class="questionnaire__item text-form__wrapper">
+              <label class="text-form__label" for="owners-email">E-mail:*</label>
+              <input class="text-form__input" id="owners-email" type="email" placeholder="kuklachev@gmail.com" required>
+            </div>
+            <div class="questionnaire__item text-form__wrapper">
+              <label class="text-form__label" for="owners-phone-number">Телефон:*</label>
+              <input class="text-form__input" id="owners-phone-number" type="text" placeholder="8 (960) 900-60-90" pattern="\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
+            </div>
           </div>
         </fieldset>
 
         <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line comments">
           <legend class="questionnaire__title title title--small">Комментарий</legend>
-          <textarea class="comments__input" rows="4">Расскажите обо всех повадках кота</textarea>
+          <div class="questionnaire__fieldset-wrapper">
+            <textarea class="comments__input" rows="6">Расскажите обо всех повадках кота</textarea>
+          </div>
         </fieldset>
 
         <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line check-form">
           <legend class="questionnaire__title title title--small">Дополнительно</legend>
-          <div class="questionnaire__item check-form__wrapper">
-            <input class="visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked>
-            <label class="check-form__label" for="sweetener">Сахарозаменитель</label>
-          </div>
-          <div class="questionnaire__item check-form__wrapper">
-            <input class="visually-hidden" id="water" name="extra-field" type="checkbox" value="вода">
-            <label class="check-form__label" for="water">Вода</label>
-          </div>
-          <div class="questionnaire__item check-form__wrapper">
-            <input class="visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко">
-            <label class="check-form__label" for="milk">Молоко</label>
-          </div>
-          <div class="questionnaire__item check-form__wrapper">
-            <input class="visually-hidden" id="vitamins" name="extra-field" type="checkbox" value="витамины">
-            <label class="check-form__label" for="vitamins">Витамины</label>
+          <div class="questionnaire__fieldset-wrapper">
+            <div class="questionnaire__item questionnaire__item--check-box check-form__wrapper">
+              <input class="visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked>
+              <label class="check-form__label" for="sweetener">Сахарозаменитель</label>
+            </div>
+            <div class="questionnaire__item questionnaire__item--check-box check-form__wrapper">
+              <input class="visually-hidden" id="water" name="extra-field" type="checkbox" value="вода">
+              <label class="check-form__label" for="water">Вода</label>
+            </div>
+            <div class="questionnaire__item questionnaire__item--check-box check-form__wrapper">
+              <input class="visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко">
+              <label class="check-form__label" for="milk">Молоко</label>
+            </div>
+            <div class="questionnaire__item questionnaire__item--check-box check-form__wrapper">
+              <input class="visually-hidden" id="vitamins" name="extra-field" type="checkbox" value="витамины">
+              <label class="check-form__label" for="vitamins">Витамины</label>
+            </div>
           </div>
         </fieldset>
 
-        <button class="questionnaire__button button" type="submit">Отправить заявку</button>
-        <p class="questionnaire__notice text-font">* — Обязательные поля</p>
+        <div class="questionnaire__button-wrapper">
+          <button class="questionnaire__button button" type="submit">Отправить заявку</button>
+          <p class="questionnaire__notice text-font">* — Обязательные поля</p>
+        </div>
       </form>
     </main>
 
-    <footer class="page-footer page-footer--inner">
+    <footer class="page-footer">
 
       <section class="page-footer__location location">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="location__wrapper">
           <div class="location__dealer-inv">Приглашаем к сотрудничеству дилеров!</div>
-          <div class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+          <div class="location__address text-font">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
         </div>
 
         <div class="location__map-wrapper">
@@ -126,24 +136,35 @@
       </section>
 
       <div class="page-footer__links footer-links">
-        <img class="footer-links__logo company-logo__text" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+        <a class="footer-links__logo-wrapper" href="index.html">
+          <img class="footer-links__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+        </a>
 
         <ul class="footer-links__list social-block">
           <li class="social-block__item">
-            <a class="social-block__link social-block__link--vk" href="#">Ссылка на нас в Вконтакте</a>
+            <a class="social-block__link social-block__link--vk" href="#">
+              <img src="img/icon-vk-mobile.svg" width="33" height="33">
+              Ссылка на нас в Вконтакте
+            </a>
           </li>
           <li class="social-block__item">
-            <a class="social-block__link social-block__link--instagram" href="#">Ссылка на нас в Инстаграм</a>
+            <a class="social-block__link social-block__link--instagram" href="#">
+              <img src="img/icon-insta-mobile.svg" width="33" height="33">
+              Ссылка на нас в Инстаграм
+            </a>
           </li>
           <li class="social-block__item">
-            <a class="social-block__link social-block__link--facebook" href="#">ССлыка на нас в Фэйсбук</a>
+            <a class="social-block__link social-block__link--facebook" href="#">
+              Ссылка на нас в Фэйсбук
+              <img src="img/icon-fb-mobile.svg" width="33" height="33">
+            </a>
           </li>
         </ul>
 
         <div class="footer-links__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__link-image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+            <img class="copyright__link-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
           </a>
         </div>
       </div>

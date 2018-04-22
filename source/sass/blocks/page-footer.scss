@@ -1,8 +1,30 @@
 .page-footer {
   display: flex;
   flex-direction: column;
+
+  margin-top: 35px;
 }
 
-.page-footer--inner {
-  background-color: $gray;
+.page-footer--index-page {
+  margin-top: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    margin-top: 76px;
+  }
+
+  .page-footer--index-page {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    margin-top: 88px;
+  }
+
+  .page-footer--index-page {
+    margin-top: 0;
+  }
 }

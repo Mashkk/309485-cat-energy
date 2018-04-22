@@ -2,9 +2,12 @@
   width: 100%;
   height: auto;
 
+  margin-top: -67px;
   margin-bottom: 22px;
+  padding-top: 85px;
 
   background: url("../img/index-background-mobile@1x.jpg") top no-repeat;
+  background-color: $green;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +19,9 @@
 @media (min-width: $desktop-width) {
   .product-promotion {
     min-height: 650px;
+    margin-bottom: 80px;
+
+    background: linear-gradient(to right, #ffffff 50%, $green 50%);
   }
 }
 
@@ -93,6 +99,12 @@
     transform: none;
     margin-top: -330px;
     left: 30%;
+    z-index: 0;
+  }
+
+  .product-promotion__name,
+  .product-promotion__slogan {
+    z-index: 1;
   }
 }
 

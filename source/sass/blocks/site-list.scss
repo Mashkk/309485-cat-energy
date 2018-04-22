@@ -65,7 +65,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .site-list__link {
+  .main-nav--index-page .site-list__link {
     color: #ffffff;
 
     &--active {
