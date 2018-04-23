@@ -1,5 +1,4 @@
 .diet-programs {
-  margin: 0 auto;
   margin-bottom: 10px;
 }
 
@@ -8,12 +7,12 @@
   flex-direction: column;
 
   @include reset-list();
-  margin: 0 20px;
+  padding: $mobile-padding;
 }
 
 @media (min-width: $tablet-width) {
   .diet-programs__list {
-    margin: 0 30px;
+    padding: $tablet-padding;
   }
 }
 
@@ -22,6 +21,6 @@
     flex-direction: row;
     justify-content: space-between;
 
-    margin: 0 111px;
+    padding: $desktop-padding;
   }
 }

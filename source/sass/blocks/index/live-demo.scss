@@ -1,11 +1,14 @@
 .live-demo {
+  background-color: $gray;
+}
+
+.live-demo__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 
   padding: $mobile-padding;
-  background-color: $gray;
 }
 
 .live-demo__wrapper {
@@ -19,9 +22,12 @@
 
 @media (min-width: $tablet-width) {
   .live-demo {
-    padding: $tablet-padding;
     border-top: 1px solid $gray;
     background: linear-gradient(to bottom, #ffffff 67%, $gray 67%);
+  }
+
+  .live-demo__container {
+    padding: $tablet-padding;
   }
 
   .live-demo__wrapper {
@@ -31,9 +37,13 @@
 
 @media (min-width: $desktop-width) {
   .live-demo {
+    border: none;
+    background: linear-gradient(to bottom, #ffffff 20%, $gray 20%);
+  }
+
+  .live-demo__container {
     justify-content: space-between;
     padding: $desktop-padding;
-    background: linear-gradient(to bottom, #ffffff 20%, $gray 20%);
   }
 
   .live-demo__wrapper {

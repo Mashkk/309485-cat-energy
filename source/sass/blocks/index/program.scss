@@ -1,9 +1,6 @@
 .program {
   position: relative;
-  width: 100%;
-
   margin-bottom: 20px;
-
 
   background-color: $gray;
 
@@ -40,15 +37,8 @@
 
 @media (min-width: $desktop-width) {
   .program {
-    width: 50%;
-  }
-
-  .program:nth-child(even) {
-    margin-left: 40px;
-  }
-
-  .program:nth-child(odd) {
-    margin-right: 40px;
+    width: 570px;
+    margin-bottom: 40px;
   }
 }
 

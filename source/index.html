@@ -9,7 +9,7 @@
 
   <body>
 
-    <header class="page-header">
+    <header class="page-header container">
 
       <div class="page-header__wrapper">
         <a class="page-header__company-logo company-logo">
@@ -37,7 +37,7 @@
       <h1 class="visually-hidden">Магазин функционального питания для котов Cat Energy</h1>
 
       <section class="product-promotion">
-        <div class="product-promotion__wrapper">
+        <div class="product-promotion__wrapper container">
           <h2 class="product-promotion__name title">Функциональное питание для котов</h2>
 
           <p class="product-promotion__slogan">Занялся собой? Займись котом!</p>
@@ -46,7 +46,7 @@
         </div>
       </section>
 
-      <section class="diet-programs">
+      <section class="diet-programs container">
         <h2 class="visually-hidden">Подбор программы для коррекции веса</h2>
 
         <ul class="diet-programs__list">
@@ -72,7 +72,7 @@
         </ul>
       </section>
 
-      <section class="how-it-works">
+      <section class="how-it-works container">
         <h2 class="how-it-works__title title">Как это работает</h2>
 
         <ul class="how-it-works__list">
@@ -100,39 +100,41 @@
       </section>
 
       <section class="live-demo">
-        <div class="live-demo__wrapper">
-          <h2 class="live-demo__title title">Живой пример</h2>
-          <p class="live-demo__description text-font">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
+        <div class="live-demo__container container">
+          <div class="live-demo__wrapper">
+            <h2 class="live-demo__title title">Живой пример</h2>
+            <p class="live-demo__description text-font">
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+            </p>
 
-          <div class="live-demo__information-wrapper">
-            <div class="live-demo__information demo-info">
-              <div class="demo-info__wrapper demo-info__wrapper--weight">
-                <div class="demo-info__value title title--small">5 кг</div>
-                <div class="demo-info__description">снижение веса</div>
+            <div class="live-demo__information-wrapper">
+              <div class="live-demo__information demo-info">
+                <div class="demo-info__wrapper demo-info__wrapper--weight">
+                  <div class="demo-info__value title title--small">5 кг</div>
+                  <div class="demo-info__description">снижение веса</div>
+                </div>
+                <div class="demo-info__wrapper demo-info__wrapper--time">
+                  <div class="demo-info__value title title--small">60 дней</div>
+                  <div class="demo-info__description">затрачено времени</div>
+                </div>
               </div>
-              <div class="demo-info__wrapper demo-info__wrapper--time">
-                <div class="demo-info__value title title--small">60 дней</div>
-                <div class="demo-info__description">затрачено времени</div>
-              </div>
+              <p class="demo-info__conclusion">Затраты на питание: 15 000 руб.</p>
             </div>
-            <p class="demo-info__conclusion">Затраты на питание: 15 000 руб.</p>
           </div>
-        </div>
 
-        <div class="live-demo__slider">
-          <div class="live-demo__image-wrapper">
-            <img class="live-demo__slider-image live-demo__slider-image--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот до корма Cat Energy Slim">
-            <img class="live-demo__slider-image live-demo__slider-image--after visually-hidden" src="#" width="311" height="232" alt="Кот после замены обычного корма на Cat Energy Slim">
-          </div>
-          <div class="live-demo__toggle live-toggle">
-            <button class="live-toggle__button live-toggle__button--before" type="button">Было</button>
-            <label class="live-toggle__switch">
-              <input class="visually-hidden" type="checkbox">
-              <span class="live-toggle__slider"></span>
-            </label>
-            <button class="live-toggle__button live-toggle__button--after" type="button">Стало</button>
+          <div class="live-demo__slider">
+            <div class="live-demo__image-wrapper">
+              <img class="live-demo__slider-image live-demo__slider-image--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Кот до корма Cat Energy Slim">
+              <img class="live-demo__slider-image live-demo__slider-image--after visually-hidden" src="#" width="311" height="232" alt="Кот после замены обычного корма на Cat Energy Slim">
+            </div>
+            <div class="live-demo__toggle live-toggle">
+              <button class="live-toggle__button live-toggle__button--before" type="button">Было</button>
+              <label class="live-toggle__switch">
+                <input class="visually-hidden" type="checkbox">
+                <span class="live-toggle__slider"></span>
+              </label>
+              <button class="live-toggle__button live-toggle__button--after" type="button">Стало</button>
+            </div>
           </div>
         </div>
       </section>
@@ -143,8 +145,10 @@
       <section class="page-footer__location location">
         <h2 class="visually-hidden">Как нас найти</h2>
         <div class="location__wrapper location__wrapper--index-page">
-          <div class="location__dealer-inv">Приглашаем к сотрудничеству дилеров!</div>
-          <div class="location__address text-font">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+          <div class="location__container container">
+            <div class="location__dealer-inv">Приглашаем к сотрудничеству дилеров!</div>
+            <div class="location__address text-font">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+          </div>
         </div>
 
         <div class="location__map-wrapper">
@@ -152,7 +156,7 @@
         </div>
       </section>
 
-      <div class="page-footer__links footer-links">
+      <div class="page-footer__links footer-links container">
         <a class="footer-links__logo-wrapper">
           <img class="footer-links__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>
