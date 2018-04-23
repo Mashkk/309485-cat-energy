@@ -2,12 +2,15 @@
   padding-top: 30px;
 }
 
+.form-page-main__container {
+  padding: $mobile-padding;
+}
+
 .form-page-main__title {
   line-height: 0.6;
 
   margin: 0;
   margin-bottom: 30px;
-  padding-left: 20px;
 }
 
 .form-page-main__description {
@@ -18,7 +21,6 @@
 
   margin: 0;
   margin-bottom: 42px;
-  padding-left: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -26,14 +28,17 @@
     padding-top: 65px;
   }
 
+  .form-page-main__container {
+    padding: $tablet-padding;
+  }
+
   .form-page-main__title {
     margin-bottom: 50px;
-    padding-left: 30px;
   }
 
   .form-page-main__description {
     width: 348px;
-    padding-left: 68px;
+    padding-left: 39px;
   }
 }
 
@@ -42,8 +47,7 @@
     padding-top: 85px;
   }
 
-  .form-page-main__title,
-  .form-page-main__description {
-    padding-left: 110px;
+  .form-page-main__container {
+    padding: $desktop-padding;
   }
 }

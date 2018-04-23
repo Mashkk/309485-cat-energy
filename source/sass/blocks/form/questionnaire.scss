@@ -11,18 +11,12 @@
   border: none;
 }
 
-.questionnaire__fieldset--combo {
-  padding: $mobile-padding;
-}
-
-.questionnaire__fieldset-wrapper {
-  padding: $mobile-padding;
-}
-
 .questionnaire__fieldset--gray-border {
+  padding: $mobile-padding;
   padding-top: 28px;
   padding-bottom: 28px;
   margin-top: 24px;
+
   border-top: 1px solid $gray;
   border-bottom: 1px solid $gray;
 }
@@ -33,8 +27,13 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  width: 100%;
+
   margin-bottom: 32px;
+}
+
+.questionnaire__fieldset-wrapper,
+.questionnaire__fieldset--owner {
+  padding: $mobile-padding;
 }
 
 .questionnaire__item {
@@ -48,23 +47,20 @@
 }
 
 .questionnaire__title {
-  width: 190px;
   text-transform: initial;
   margin-bottom: 32px;
-  padding-left: 20px;
+  padding: $mobile-padding;
 }
 
 .questionnaire__button-wrapper {
   display: flex;
   flex-wrap: wrap;
 
-  width: 100%;
   padding: $mobile-padding;
 }
 
 .questionnaire__button {
-  width: 100%;
-  margin: 24px auto;
+  margin: 24px 0;
 }
 
 .questionnaire__notice {
@@ -81,9 +77,8 @@
 
   .questionnaire__fieldsets-wrapper,
   .questionnaire__fieldset-wrapper {
-    width: 702px;
-    padding-left: 71px;
     margin-bottom: 71px;
+    padding: 0 69px;
   }
 
   .questionnaire__fieldset--gray-border {
@@ -94,8 +89,7 @@
   }
 
   .questionnaire__title {
-    width: auto;
-    padding-left: 70px;
+    padding: 0 69px;
     margin-bottom: 71px;
   }
 
@@ -121,7 +115,6 @@
 @media (min-width: $desktop-width) {
   .questionnaire__fieldsets-wrapper,
   .questionnaire__fieldset-wrapper {
-    width: 100%;
     padding: $desktop-padding;
   }
 
@@ -140,7 +133,7 @@
   }
 
   .questionnaire__title {
-    padding-left: 110px;
+    padding: $desktop-padding;
   }
 
   .questionnaire__item--check-box {
@@ -148,7 +141,7 @@
   }
 
   .questionnaire__button-wrapper {
-    padding-left: 110px;
+    padding: $desktop-padding;
   }
 
   .questionnaire__button {
