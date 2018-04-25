@@ -1,13 +1,27 @@
 .main-products {
-  margin-bottom: 32px;
+  margin: 33px 0;
+}
+
+.main-products__title {
+  margin-bottom: 33px;
 }
 
 .main-products__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   @include reset-list();
+}
+
+@media (max-width: $tablet-width) {
+  .main-products__container {
+    padding: 0;
+  }
+
+  .main-products__title {
+    padding: $mobile-padding;
+  }
 }
 
 @media (min-width: $tablet-width) {
