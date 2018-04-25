@@ -1,6 +1,37 @@
+.main-products {
+  margin: 33px 0;
+}
+
+.main-products__title {
+  margin-bottom: 33px;
+}
+
 .main-products__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
-  @include reset();
+  @include reset-list();
+}
+
+@media (max-width: $tablet-width) {
+  .main-products__container {
+    padding: 0;
+  }
+
+  .main-products__title {
+    padding: $mobile-padding;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-products {
+    margin-bottom: 71px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-products {
+    margin-bottom: 80px;
+  }
 }

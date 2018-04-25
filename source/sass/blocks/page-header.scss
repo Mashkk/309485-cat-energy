@@ -1,14 +1,51 @@
-.page-header {
+.page-header__container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
-  width: 100%;
   min-height: 65px;
 
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
 .page-header__wrapper {
   display: flex;
-  margin: 0 auto;
+  justify-content: center;
+}
+
+.page-header__company-logo {
+  padding-top: 15px;
+}
+
+.page-header__toggle {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  font-size: 0;
+  line-height: 0;
+
+  width: 120px;
+  height: 66px;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header__container {
+    padding: 0;
+  }
+
+  .page-header__wrapper {
+    padding: $mobile-padding;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    flex-direction: row;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
 }

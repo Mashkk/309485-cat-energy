@@ -1,12 +1,17 @@
 .diet-programs {
-  margin-bottom: 34px;
-  padding: 0 20px;
+  margin-bottom: 10px;
 }
 
 .diet-programs__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
-  margin: 0;
-  padding: 0;
+  @include reset-list();
+}
+
+@media (min-width: $desktop-width) {
+  .diet-programs__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

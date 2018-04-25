@@ -4,20 +4,28 @@
 
   width: 280px;
 
+  @include reset-list();
   margin: 30px 0;
-  padding: 20px 0;
 
-  border: 1px solid $gray-line;
+  border-top: 1px solid $gray-line;
+  border-bottom: 1px solid $gray-line;
 }
 
 .social-block__item {
   @include reset-list();
   padding-right: 30px;
 
-  line-height: 0;
   font-size: 0;
 }
 
 .social-block__link {
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .social-block {
+    width: 33.33%;
+    border: none;
+    margin: 0;
+  }
 }

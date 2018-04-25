@@ -1,12 +1,25 @@
 .location {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+
+  position: relative;
 }
 
 .location__wrapper {
+  width: 100%;
+  padding: 30px 0;
+  background-color: $gray;
+}
+
+.location__wrapper--index-page {
+  background-color: #ffffff;
+}
+
+.location__container {
   display: flex;
-  padding: 25px 20px;
+  justify-content: space-between;
+
+  padding: $mobile-padding;
 }
 
 .location__dealer-inv {
@@ -22,8 +35,54 @@
 .location__map-wrapper {
   position: relative;
 
-  width: 320px;
+  width: 100%;
   min-height: 365px;
 
   background-color: $gray;
+}
+
+.location__map-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .location__wrapper {
+    padding: 65px 0;
+  }
+
+  .location__container {
+    padding: 0 70px;
+  }
+
+  .location__dealer-inv {
+    width: 165px;
+    font-size: 20px;
+  }
+
+  .location__address {
+    width: 170px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__wrapper {
+    position: absolute;
+    z-index: 2;
+
+    top: 95px;
+    left: 50%;
+    transform: translateX(-610px);
+
+    width: 570px;
+    height: 201px;
+
+    background-color: #ffffff;
+  }
+
+  .location__container {
+    width: 570px;
+  }
 }

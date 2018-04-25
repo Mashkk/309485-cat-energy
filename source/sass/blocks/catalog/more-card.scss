@@ -1,20 +1,41 @@
 .more-card {
-  border-bottom: 1px solid $gray-line;
-  padding-top: 80px;
+  border-bottom: 1px solid $gray;
+  background-color: #ffffff;
+}
+
+.more-card__description {
+  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .more-card__text {
-  display: inline-block;
-  vertical-align: middle;
-
-  width: 280px;
-
   text-align: center;
   margin: 0 auto;
+  padding-bottom: 22px;
 
-  &--b {
+  &--bold {
+    margin: 0 auto;
     padding-bottom: 14px;
     font-weight: 400;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .more-card {
+    border: 1px solid $gray;
+  }
+
+  .more-card__description {
+    margin-top: 166px;
+  }
+
+  .more-card__text {
+    width: 180px;
+
+    &--bold {
+      width: 136px;
+      font-size: 20px;
+    }
   }
 }

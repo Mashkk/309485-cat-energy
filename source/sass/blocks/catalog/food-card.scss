@@ -1,17 +1,20 @@
 .food-card {
-  display: flex;
-  flex-wrap: wrap;
+  width: 100%;
 
-  width: 320px;
-
-  list-style: none;
   padding: 0 20px 25px;
-
   border-top: 1px solid $gray-line;
 }
 
+.food-card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 100%;
+}
+
 .food-card__stats {
-  width: 140px;
+  width: 50%;
 
   margin-top: 25px;
   border-collapse: collapse;
@@ -22,13 +25,15 @@
 .food-card__title {
   text-align: left;
   margin-right: 67px;
-  padding-bottom: 5px;
+  margin-bottom: 5px;
+
+  font-size: 16px;
+  line-height: 1;
 }
 
 .food-card__title-link {
   text-decoration: none;
   font-family: $oswald-font;
-  font-size: 16px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -37,9 +42,12 @@
   text-align: right;
 }
 
-.food-card__button--gray {
-  margin-top: 23px;
+.food-card__button-order {
+  width: 100%;
+  margin-top: auto;
+}
 
+.food-card__button-order--gray {
   background-color: $gray;
   color: #000000;
 
@@ -50,5 +58,48 @@
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .food-card__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .food-card {
+    width: 324px;
+    min-height: 432px;
+
+    margin-top: 142px;
+    padding: 0 37px 40px;
+    border: none;
+    background-color: $gray;
+  }
+
+  .food-card__stats {
+    width: 100%;
+  }
+
+  .food-card__item {
+    padding: 5px 0;
+    border-bottom: 1px solid $gray-line;
+  }
+
+  .food-card__title {
+    font-size: 20px;
+    text-align: center;
+
+    margin: 15px auto;
+  }
+
+  .food-card__image {
+    transform: translateY(-30%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .food-card {
+    width: 245px;
   }
 }

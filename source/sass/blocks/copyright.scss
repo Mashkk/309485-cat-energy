@@ -1,0 +1,25 @@
+.copyright {
+  width: 100%;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  text-decoration: none;
+  color: $black-text;
+  font-family: $text-font;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 33.33%;
+  }
+
+  .copyright__link {
+    justify-content: flex-end;
+  }
+}
