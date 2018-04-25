@@ -1,5 +1,6 @@
 .page-header__container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -29,7 +30,21 @@
   height: 66px;
 }
 
+@media (max-width: $tablet-width) {
+  .page-header__container {
+    padding: 0;
+  }
+
+  .page-header__wrapper {
+    padding: $mobile-padding;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .page-header__container {
+    flex-direction: row;
+  }
+
   .page-header__toggle {
     display: none;
   }

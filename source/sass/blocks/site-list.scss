@@ -1,8 +1,7 @@
 .site-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-
-  min-width: 320px;
 
   @include reset-list();
 }
@@ -24,6 +23,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .site-list {
+    flex-direction: row;
+  }
+
   .site-list__item {
     width: initial;
 

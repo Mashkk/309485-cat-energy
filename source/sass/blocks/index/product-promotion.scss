@@ -1,8 +1,5 @@
 .product-promotion {
-  height: auto;
-
   margin-bottom: 22px;
-
   background: url("../img/index-background-mobile@1x.jpg") top no-repeat;
 }
 
@@ -31,7 +28,6 @@
 
 @media (min-width: $tablet-width) {
   .product-promotion__wrapper {
-    padding: $tablet-padding;
     padding-top: 50px;
   }
 }
