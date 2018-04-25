@@ -7,20 +7,11 @@
   flex-direction: column;
 
   @include reset-list();
-  padding: $mobile-padding;
-}
-
-@media (min-width: $tablet-width) {
-  .diet-programs__list {
-    padding: $tablet-padding;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .diet-programs__list {
     flex-direction: row;
     justify-content: space-between;
-
-    padding: $desktop-padding;
   }
 }

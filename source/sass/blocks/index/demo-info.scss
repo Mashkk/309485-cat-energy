@@ -1,14 +1,6 @@
 .demo-info {
   display: flex;
   justify-content: baseline;
-
-  margin: 0 auto;
-}
-
-@media (min-width: $tablet-width) {
-  .demo-info {
-    margin: 0;
-  }
 }
 
 .demo-info__wrapper {
