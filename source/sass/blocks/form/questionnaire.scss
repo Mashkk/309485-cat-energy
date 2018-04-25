@@ -4,36 +4,24 @@
 }
 
 .questionnaire__fieldset {
-  width: 100%;
   margin: 0;
   padding: 0;
-
   border: none;
 }
 
 .questionnaire__fieldset--gray-border {
-  padding: $mobile-padding;
-  padding-top: 28px;
-  padding-bottom: 28px;
+  position: relative;
+  padding: 28px 0;
   margin-top: 24px;
-
-  border-top: 1px solid $gray;
-  border-bottom: 1px solid $gray;
 }
 
 .questionnaire__fieldsets-wrapper,
 .questionnaire__fieldset-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 
-
   margin-bottom: 32px;
-}
-
-.questionnaire__fieldset-wrapper,
-.questionnaire__fieldset--owner {
-  padding: $mobile-padding;
 }
 
 .questionnaire__item {
@@ -49,14 +37,11 @@
 .questionnaire__title {
   text-transform: initial;
   margin-bottom: 32px;
-  padding: $mobile-padding;
 }
 
 .questionnaire__button-wrapper {
   display: flex;
   flex-wrap: wrap;
-
-  padding: $mobile-padding;
 }
 
 .questionnaire__button {
@@ -70,35 +55,51 @@
   text-transform: initial;
 }
 
-@media (min-width: $tablet-width) {
-  .questionnaire__fieldset--combo {
-    padding: 0;
+@media (max-width: $tablet-width) {
+  .questionnaire__fieldset--gray-border::before,
+  .questionnaire__fieldset--gray-border::after {
+    content: "";
+    position: absolute;
+
+    width: 768px;
+    height: 1px;
+
+    top: 0;
+
+    transform: translateX(-50%);
+
+    background-color: $gray;
   }
 
+  .questionnaire__fieldset--gray-border::after {
+    top: auto;
+    bottom: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
   .questionnaire__fieldsets-wrapper,
   .questionnaire__fieldset-wrapper {
     margin-bottom: 71px;
-    padding: 0 69px;
+  }
+
+  .check-form .questionnaire__fieldset-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .questionnaire__fieldset--gray-border {
     border: 1px solid $gray;
     padding: 36px 0;
-    margin-top: 72px;
-    margin-bottom: 8px;
+    margin: 72px 0 8px;
   }
 
   .questionnaire__title {
-    padding: 0 69px;
     margin-bottom: 71px;
   }
 
   .questionnaire__item--check-box {
     width: 50%;
-  }
-
-  .questionnaire__button-wrapper {
-    padding-left: 71px;
   }
 
   .questionnaire__button {
@@ -115,7 +116,8 @@
 @media (min-width: $desktop-width) {
   .questionnaire__fieldsets-wrapper,
   .questionnaire__fieldset-wrapper {
-    padding: $desktop-padding;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .questionnaire__fieldset {
@@ -132,16 +134,8 @@
     margin: 0;
   }
 
-  .questionnaire__title {
-    padding: $desktop-padding;
-  }
-
   .questionnaire__item--check-box {
     width: 245px;
-  }
-
-  .questionnaire__button-wrapper {
-    padding: $desktop-padding;
   }
 
   .questionnaire__button {

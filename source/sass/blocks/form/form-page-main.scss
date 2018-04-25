@@ -3,13 +3,10 @@
 }
 
 .form-page-main__container {
-  padding: $mobile-padding;
+  overflow: hidden;
 }
 
 .form-page-main__title {
-  line-height: 0.6;
-
-  margin: 0;
   margin-bottom: 30px;
 }
 
@@ -29,7 +26,7 @@
   }
 
   .form-page-main__container {
-    padding: $tablet-padding;
+    padding: 0 69px;
   }
 
   .form-page-main__title {
@@ -38,7 +35,6 @@
 
   .form-page-main__description {
     width: 348px;
-    padding-left: 39px;
   }
 }
 
