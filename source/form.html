@@ -39,7 +39,8 @@
       <h1 class="form-page-main__title title container">Подбор программы</h1>
       <div class="form-page-main__container container">
 
-        <p class="form-page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <p class="form-page-main__description">Заполните анкету и мы подберем
+          <br> программу питания для вашего кота</p>
 
         <form class="questionnaire" action="https://echo.htmlacademy.ru" method="post">
 
@@ -59,18 +60,18 @@
               </div>
             </fieldset>
 
-            <fieldset class="questionnaire__fieldset questionnaire__fieldset--gray-border radio-form">
+            <fieldset class="questionnaire__fieldset questionnaire__fieldset--gray-border radio-form custom-box">
               <div class="questionnaire__item radio-form__wrapper">
                 <input class="visually-hidden" id="losing-weight" name="pets-problems" type="radio" value="losing-weight" checked>
-                <label class="radio-form__label" for="losing-weight">Похудение</label>
+                <label class="custom-box__label custom-box__label--radio" for="losing-weight">Похудение</label>
               </div>
               <div class="questionnaire__item radio-form__wrapper">
                 <input class="visually-hidden" id="gain-weight" name="pets-problems" type="radio" value="gain-weight">
-                <label class="radio-form__label" for="gain-weight">Набор массы</label>
+                <label class="custom-box__label custom-box__label--radio" for="gain-weight">Набор массы</label>
               </div>
               <div class="questionnaire__item radio-form__wrapper">
-                <input class="visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite">
-                <label class="radio-form__label" for="indefinite">Не знаю (нужен ваш совет)</label>
+                <input class="visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite" disabled>
+                <label class="custom-box__label custom-box__label--radio" for="indefinite">Не знаю (нужен ваш совет)</label>
               </div>
             </fieldset>
           </div>
@@ -89,31 +90,31 @@
             </div>
           </fieldset>
 
-          <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line comments">
+          <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line comments text-form">
             <legend class="questionnaire__title title title--small">Комментарий</legend>
             <div class="questionnaire__fieldset-wrapper">
-              <textarea class="comments__input" rows="6">Расскажите обо всех повадках кота</textarea>
+              <textarea class="comments__input text-form__input" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
 
-          <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line check-form">
+          <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line check-form custom-box">
             <legend class="questionnaire__title title title--small">Дополнительно</legend>
             <div class="questionnaire__fieldset-wrapper">
-              <div class="questionnaire__item questionnaire__item--check-box check-form__wrapper">
-                <input class="visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked>
-                <label class="check-form__label" for="sweetener">Сахарозаменитель</label>
+              <div class="questionnaire__item check-form__wrapper">
+                <input class="visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked disabled>
+                <label class="custom-box__label custom-box__label--check" for="sweetener">Сахарозаменитель</label>
               </div>
-              <div class="questionnaire__item questionnaire__item--check-box check-form__wrapper">
+              <div class="questionnaire__item check-form__wrapper">
                 <input class="visually-hidden" id="water" name="extra-field" type="checkbox" value="вода">
-                <label class="check-form__label" for="water">Вода</label>
+                <label class="custom-box__label custom-box__label--check" for="water">Питьевая вода</label>
               </div>
-              <div class="questionnaire__item questionnaire__item--check-box check-form__wrapper">
-                <input class="visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко">
-                <label class="check-form__label" for="milk">Молоко</label>
+              <div class="questionnaire__item check-form__wrapper">
+                <input class="visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко" disabled>
+                <label class="custom-box__label custom-box__label--check" for="milk">Молоко</label>
               </div>
-              <div class="questionnaire__item questionnaire__item--check-box check-form__wrapper">
+              <div class="questionnaire__item check-form__wrapper">
                 <input class="visually-hidden" id="vitamins" name="extra-field" type="checkbox" value="витамины">
-                <label class="check-form__label" for="vitamins">Витамины</label>
+                <label class="custom-box__label custom-box__label--check" for="vitamins">Витамины</label>
               </div>
             </div>
           </fieldset>

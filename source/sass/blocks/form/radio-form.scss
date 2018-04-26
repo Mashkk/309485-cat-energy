@@ -1,0 +1,16 @@
+.radio-form__wrapper {
+  margin-bottom: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-form__wrapper {
+    max-width: 100%;
+    margin-bottom: 28px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .radio-form__wrapper {
+    max-width: 490px;
+  }
+}
