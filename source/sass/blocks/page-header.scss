@@ -27,7 +27,9 @@
     padding-top: 37px;
     padding-bottom: 15px;
   }
+}
 
+@media (min-width: $desktop-width) {
   .page-header__container {
     padding-top: 68px;
   }

@@ -1,10 +1,25 @@
+.product-promotion__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding: 27px 20px 0;
+
+  background: url("../img/index-background-mobile@1x.jpg") top no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
 .product-promotion {
   margin-bottom: 22px;
-  background: url("../img/index-background-mobile@1x.jpg") top no-repeat;
 }
 
 @media (min-width: $tablet-width) {
-  .product-promotion {
+  .product-promotion__wrapper {
+    padding-top: 46px;
+
     background: none;
   }
 }
@@ -17,22 +32,7 @@
 
     background: linear-gradient(to right, #ffffff 50%, $green 50%);
   }
-}
 
-.product-promotion__wrapper {
-  display: flex;
-  flex-direction: column;
-
-  padding: 32px 20px 0;
-}
-
-@media (min-width: $tablet-width) {
-  .product-promotion__wrapper {
-    padding-top: 50px;
-  }
-}
-
-@media (min-width: $desktop-width) {
   .product-promotion__wrapper {
     padding: 150px 40px 0 120px;
   }
@@ -48,56 +48,55 @@
   text-align: center;
 }
 
+.product-promotion__name {
+  margin-bottom: 25px;
+}
+
+.product-promotion__slogan {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 31px;
+}
+
 @media (min-width: $tablet-width) {
   .product-promotion__name,
   .product-promotion__slogan {
     color: $black-text;
     text-align: left;
     margin: 0;
+    margin-bottom: 40px;
     max-width: 430px;
   }
-}
 
-.product-promotion__name {
-  margin-bottom: 20px;
-}
-
-.product-promotion__slogan {
-  font-size: 14px;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-}
-
-@media (min-width: $tablet-width) {
   .product-promotion__slogan {
     font-size: 20px;
-    margin-top: 30px;
+    margin-bottom: 48px;
   }
 }
 
 .product-promotion__image {
   position: relative;
   left: 50%;
+  top: -3px;
   transform: translateX(-50%);
 }
 
 @media (min-width: $tablet-width) {
-  .product-promotion__image {
+  .product-promotion__image-wrapper {
     order: 4;
     z-index: -1;
     margin-top: -80px;
-    //временно увеличила картинку, пока нет версия для таблета
-    width: 509px;
-    height: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .product-promotion__image-wrapper {
+    margin-top: -330px;
+    z-index: 0;
+  }
+
   .product-promotion__image {
     transform: none;
-    margin-top: -330px;
-    left: 30%;
-    z-index: 0;
   }
 
   .product-promotion__name,
