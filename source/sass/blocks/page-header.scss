@@ -9,43 +9,26 @@
   background-color: transparent;
 }
 
-.page-header__wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.page-header__company-logo {
-  padding-top: 15px;
-}
-
-.page-header__toggle {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-
-  font-size: 0;
-  line-height: 0;
-
-  width: 120px;
-  height: 66px;
-}
-
 @media (max-width: $tablet-width) {
   .page-header__container {
     padding: 0;
   }
 
   .page-header__wrapper {
-    padding: $mobile-padding;
+    padding: 13px 20px 10px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .page-header__container {
     flex-direction: row;
+    align-items: baseline;
+
+    padding-top: 37px;
+    padding-bottom: 15px;
   }
 
-  .page-header__toggle {
-    display: none;
+  .page-header__container {
+    padding-top: 68px;
   }
 }
