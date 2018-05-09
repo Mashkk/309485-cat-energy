@@ -1,6 +1,7 @@
 .product-promotion__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
 
   padding: 27px 20px 0;
 
@@ -28,8 +29,8 @@
 
 @media (min-width: $desktop-width) {
   .product-promotion {
-    min-height: 650px;
-    margin-bottom: 80px;
+    min-height: 696px;
+    margin-bottom: 34px;
     margin-top: -126px;
 
     background: url("../img/index-background-desktop@1x.jpg") right no-repeat,
@@ -100,7 +101,8 @@
 
 @media (min-width: $desktop-width) {
   .product-promotion__image-wrapper {
-    margin-top: -330px;
+    margin-top: -286px;
+    margin-left: 74px;
     z-index: 0;
   }
 
