@@ -1,5 +1,4 @@
 .questionnaire {
-  margin-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -21,11 +20,12 @@
   flex-direction: column;
   justify-content: space-between;
 
-  margin-bottom: 32px;
+  margin-bottom: 28px;
 }
 
 .questionnaire__item {
   display: flex;
+  align-items: baseline;
   width: 100%;
   margin-bottom: 15px;
 }
@@ -36,16 +36,19 @@
 
 .questionnaire__title {
   text-transform: initial;
-  margin-bottom: 32px;
+  line-height: 1;
+  margin-bottom: 34px;
 }
 
 .questionnaire__button-wrapper {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
 }
 
 .questionnaire__button {
-  margin: 24px 0;
+  font-size: 16px;
+  margin: 7px 0 20px;
 }
 
 .questionnaire__notice {
@@ -80,31 +83,34 @@
 @media (min-width: $tablet-width) {
   .questionnaire__fieldsets-wrapper,
   .questionnaire__fieldset-wrapper {
-    margin-bottom: 71px;
-  }
-
-  .check-form .questionnaire__fieldset-wrapper {
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin-bottom: 67px;
   }
 
   .questionnaire__fieldset--gray-border {
-    border: 1px solid $gray;
-    padding: 36px 0;
+    border: 1px solid $gray-line;
+    padding: 33px 40px;
     margin: 72px 0 8px;
   }
 
   .questionnaire__title {
-    margin-bottom: 71px;
+    margin-bottom: 76px;
   }
 
-  .questionnaire__item--check-box {
-    width: 50%;
+  .questionnaire__item {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .questionnaire__button-wrapper {
+    margin-top: -45px;
   }
 
   .questionnaire__button {
     width: 283px;
+    height: 52px;
     margin: 0;
+
+    font-size: 20px;
   }
 
   .questionnaire__notice {
@@ -130,12 +136,16 @@
 
   .questionnaire__fieldset--gray-border {
     border: 1px solid $gray;
-    padding: 36px 0;
+    padding: 34px 40px;
     margin: 0;
   }
 
   .questionnaire__item--check-box {
     width: 245px;
+  }
+
+  .questionnaire__button-wrapper {
+    margin-top: -35px;
   }
 
   .questionnaire__button {

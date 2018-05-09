@@ -1,3 +1,25 @@
-.check-form__label {
-  padding-left: 46px;
+.check-form__wrapper {
+  margin: 5px 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .check-form .questionnaire__title {
+    margin-bottom: 54px;
+  }
+
+  .check-form .questionnaire__fieldset-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .check-form__wrapper {
+    width: 282px;
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .check-form__wrapper {
+    width: 245px;
+  }
 }

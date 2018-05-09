@@ -1,3 +1,19 @@
 .comments__input {
   width: 100%;
+  resize: vertical;
+  min-height: 150px;
+  max-height: 400px;
+}
+
+@media (min-width: $tablet-width) {
+  .comments__input {
+    padding-bottom: 0;
+    min-height: 175px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comments {
+    margin-top: -20px;
+  }
 }

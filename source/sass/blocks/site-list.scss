@@ -10,16 +10,19 @@
   display: inline-block;
 
   width: 100%;
-  height: 67px;
+  padding: 22px;
 
   font-size: 20px;
   font-weight: 500;
-  line-height: 67px;
 
   text-align: center;
   vertical-align: middle;
 
-  border-bottom: 1px solid $gray-line;
+  border-top: 1px solid $gray-line;
+
+  &:last-child {
+    border-bottom: 1px solid $gray-line;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -34,8 +37,13 @@
     font-weight: 400;
 
     margin-left: 37px;
+    padding: 0;
 
     border: none;
+
+    &:last-child {
+      border: none;
+    }
   }
 }
 
@@ -46,7 +54,7 @@
 }
 
 .site-list__link {
-  padding: 5px 0;
+  padding-bottom: 5px;
 
   color: $black-text;
   text-decoration: none;

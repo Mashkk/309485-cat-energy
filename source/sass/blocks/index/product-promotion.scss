@@ -1,41 +1,22 @@
-.product-promotion {
-  margin-bottom: 22px;
-  background: url("../img/index-background-mobile@1x.jpg") top no-repeat;
-}
-
-@media (min-width: $tablet-width) {
-  .product-promotion {
-    background: none;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .product-promotion {
-    min-height: 650px;
-    margin-bottom: 80px;
-    margin-top: -67px;
-
-    background: linear-gradient(to right, #ffffff 50%, $green 50%);
-  }
-}
-
 .product-promotion__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
 
-  padding: 32px 20px 0;
-}
+  padding: 27px 20px 0;
 
-@media (min-width: $tablet-width) {
-  .product-promotion__wrapper {
-    padding-top: 50px;
+  background: url("../img/index-background-mobile@1x.jpg") top no-repeat,
+    linear-gradient(to bottom, $green 305px, white 305px);
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background: url("../img/index-background-mobile@2x.jpg") top no-repeat,
+      linear-gradient(to bottom, $green 305px, white 305px);
+    background-size: 320px auto, 100%;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .product-promotion__wrapper {
-    padding: 150px 40px 0 120px;
-  }
+.product-promotion {
+  margin-bottom: 22px;
 }
 
 .product-promotion__name,
@@ -48,62 +29,21 @@
   text-align: center;
 }
 
-@media (min-width: $tablet-width) {
-  .product-promotion__name,
-  .product-promotion__slogan {
-    color: $black-text;
-    text-align: left;
-    margin: 0;
-    max-width: 430px;
-  }
-}
-
 .product-promotion__name {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .product-promotion__slogan {
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 50px;
+  margin-bottom: 31px;
 }
 
-@media (min-width: $tablet-width) {
-  .product-promotion__slogan {
-    font-size: 20px;
-    margin-top: 30px;
-  }
-}
-
-.product-promotion__image {
+.product-promotion__image-wrapper {
   position: relative;
   left: 50%;
+  top: -3px;
   transform: translateX(-50%);
-}
-
-@media (min-width: $tablet-width) {
-  .product-promotion__image {
-    order: 4;
-    z-index: -1;
-    margin-top: -80px;
-    //временно увеличила картинку, пока нет версия для таблета
-    width: 509px;
-    height: auto;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .product-promotion__image {
-    transform: none;
-    margin-top: -330px;
-    left: 30%;
-    z-index: 0;
-  }
-
-  .product-promotion__name,
-  .product-promotion__slogan {
-    z-index: 1;
-  }
 }
 
 .product-promotion__button {
@@ -111,12 +51,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .product-promotion__button {
-    margin: 0;
+  .product-promotion {
+    margin-bottom: 0;
   }
-}
 
-@media (min-width: $tablet-width) {
+  .product-promotion__wrapper {
+    padding-top: 39px;
+    background: none;
+  }
+
   .product-promotion__button {
     width: 245px;
     height: 52px;
@@ -125,5 +68,77 @@
 
     font-size: 20px;
     line-height: 52px;
+  }
+
+  .product-promotion__name,
+  .product-promotion__slogan {
+    color: $black-text;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 430px;
+  }
+
+  .product-promotion__slogan {
+    font-size: 20px;
+    margin-bottom: 48px;
+  }
+
+  .product-promotion__name,
+  .product-promotion__slogan,
+  .product-promotion__button {
+    margin-left: 89px;
+  }
+
+  .product-promotion__image-wrapper {
+    order: 4;
+    z-index: -1;
+    margin-top: -80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-promotion {
+    min-height: 696px;
+    margin-bottom: 34px;
+    margin-top: -134px;
+
+    background: url("../img/index-background-desktop@1x.jpg") right no-repeat,
+      linear-gradient(to right, #ffffff 50%, #64a83b 50%);
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/index-background-desktop@2x.jpg") right no-repeat,
+        linear-gradient(to right, #ffffff 50%, #64a83b 50%);
+      background-size: 719px auto, 100%;
+    }
+  }
+
+  .product-promotion__wrapper {
+    padding: 222px 40px 0 100px;
+  }
+
+  .product-promotion__image-wrapper {
+    margin-top: -363px;
+    margin-left: 85px;
+    z-index: 0;
+  }
+
+  .product-promotion__image {
+    transform: none;
+  }
+
+  .product-promotion__name,
+  .product-promotion__slogan {
+    z-index: 1;
+  }
+
+  .product-promotion__slogan {
+    margin-bottom: 54px;
+  }
+
+  .product-promotion__name,
+  .product-promotion__slogan,
+  .product-promotion__button {
+    margin-left: 0;
   }
 }

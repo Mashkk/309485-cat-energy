@@ -1,5 +1,5 @@
 .how-it-works {
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +16,7 @@
 
 .how-it-works__title {
   margin-bottom: 40px;
+  line-height: 1.2;
 }
 
 @media (min-width: $tablet-width) {
@@ -51,7 +52,7 @@
     height: 60px;
 
     left: 0;
-    top: 0;
+    top: -3px;
 
     background-color: $green;
   }

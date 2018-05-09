@@ -15,9 +15,10 @@
 }
 
 .demo-info__value {
-  line-height: 1;
-  padding: 18px 0;
+  padding: 13px 0 17px;
 
+  line-height: 1;
+  text-transform: uppercase;
   border: 1px solid $gray-line;
   border-radius: 3px;
 }
@@ -35,7 +36,7 @@
 .demo-info__description {
   position: absolute;
 
-  top: 54px;
+  top: 48px;
   left: 50%;
   transform: translateX(-50%);
 
@@ -52,8 +53,10 @@
 
 .demo-info__conclusion {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 37px;
+  margin: 0;
 
+  font-size: 14px;
   text-transform: uppercase;
   text-align: center;
 }
