@@ -69,9 +69,9 @@
 
   .food-card {
     width: 324px;
-    min-height: 432px;
+    min-height: 431px;
 
-    margin-top: 142px;
+    margin-top: 141px;
     padding: 0 37px 40px;
     border: none;
     background-color: $gray;
@@ -83,10 +83,13 @@
 
   .food-card__stats {
     width: 100%;
+    margin-top: 18px;
+
+    font-size: 16px;
   }
 
   .food-card__item {
-    padding: 5px 0;
+    padding: 4px 0;
     border-bottom: 1px solid $gray-line;
   }
 
@@ -97,13 +100,26 @@
     margin: 15px auto;
   }
 
-  .food-card__image {
-    transform: translateY(-30%);
+  .food-card__image-link {
+    margin: -18% -37px 0;
   }
+
+  .food-card__image-link--big {
+    margin-top: -33%;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
   .food-card {
     width: 245px;
+  }
+
+  .food-card__image-link {
+    margin-top: -26%;
+  }
+
+  .food-card__image-link--big {
+    margin-top: -47%;
   }
 }

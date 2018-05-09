@@ -14,7 +14,11 @@
       <div class="page-header__container container">
         <div class="page-header__wrapper">
           <a class="page-header__company-logo company-logo" href="index.html">
-            <img class="company-logo__image" src="img/logo-mobile.svg" width="200" height="40" alt="Cat Energy">
+            <picture>
+              <source media="(min-width: 1260px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 748px)" srcset="img/logo-tablet.svg">
+              <img class="company-logo__image" src="img/logo-mobile.svg" width="200" alt="Cat Energy">
+            </picture>
           </a>
         </div>
 
