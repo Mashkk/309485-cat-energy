@@ -41,11 +41,16 @@
   background-color: $gray;
 }
 
+.location__map-wrapper iframe {
+  width: 100%;
+}
+
 .location__map-image {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: -1;
 }
 
 @media (min-width: $tablet-width) {
@@ -64,6 +69,10 @@
 
   .location__address {
     width: 170px;
+  }
+
+  .location__map-wrapper iframe {
+    height: 396px;
   }
 }
 
@@ -84,5 +93,9 @@
 
   .location__container {
     width: 570px;
+  }
+
+  .location__map-wrapper iframe {
+    height: 400px;
   }
 }

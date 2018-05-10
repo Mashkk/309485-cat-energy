@@ -183,6 +183,7 @@
             <source media="(min-width: 748px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="location__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1525951051146" width="320" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
 
@@ -191,26 +192,28 @@
           <img class="footer-links__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
         </a>
 
-        <ul class="footer-links__list social-block">
-          <li class="social-block__item">
-            <a class="social-block__link" href="#">
-              Ссылка на нас в Вконтакте
-              <svg class="social-block__vk-icon" width="30" height="16"><use xlink:href="img/sprite.svg#vk-icon"></use></svg>
-            </a>
-          </li>
-          <li class="social-block__item">
-            <a class="social-block__link social-block__link--instagram" href="#">
-              Ссылка на нас в Инстаграм
-              <img src="img/icon-insta-mobile.svg" width="33" height="33">
-            </a>
-          </li>
-          <li class="social-block__item">
-            <a class="social-block__link social-block__link--facebook" href="#">
-              ССлыка на нас в Фэйсбук
-              <img src="img/icon-fb-mobile.svg" width="33" height="33">
-            </a>
-          </li>
-        </ul>
+        <div class="footer-links__list-wrapper">
+          <ul class="footer-links__list social-block">
+            <li class="social-block__item">
+              <a class="social-block__link" href="#">
+                Ссылка на нас в Вконтакте
+                <svg class="social-block__icon social-block__icon--vk" width="22" height="12"><use xlink:href="img/sprite.svg#vk-icon"></use></svg>
+              </a>
+            </li>
+            <li class="social-block__item">
+              <a class="social-block__link" href="#">
+                Ссылка на нас в Инстаграм
+                <svg class="social-block__icon social-block__icon--insta" width="16" height="16"><use xlink:href="img/sprite.svg#insta-icon"></use></svg>
+              </a>
+            </li>
+            <li class="social-block__item">
+              <a class="social-block__link" href="#">
+                ССлыка на нас в Фэйсбук
+                <svg class="social-block__icon social-block__icon--fb" width="10" height="19"><use xlink:href="img/sprite.svg#fb-icon"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
 
         <div class="footer-links__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
