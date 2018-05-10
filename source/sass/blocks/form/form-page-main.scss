@@ -19,6 +19,20 @@
   margin-bottom: 42px;
 }
 
+.form-page-main input:hover,
+.form-page-main textarea:hover {
+  border-color: $gray-line;
+  outline: none;
+}
+
+.form-page-main input:active,
+.form-page-main textarea:active,
+.form-page-main input.is-active,
+.form-page-main textarea.is-active {
+  border-color: $text-color;
+  outline: none;
+}
+
 @media (min-width: $tablet-width) {
   .form-page-main {
     padding-top: 67px;

@@ -69,11 +69,15 @@
   }
 
   .demo-info__conclusion {
-    width: 150px;
+    width: 250px;
     margin: 0;
     margin-left: auto;
     padding-top: 20px;
     text-align: right;
+  }
+
+  .demo-info__conclusion span {
+    display: block;
   }
 }
 
@@ -86,5 +90,10 @@
     width: 100%;
     text-align: left;
     padding-top: 45px;
+  }
+
+  .demo-info__conclusion span {
+    display: inline-block;
+    vertical-align: middle;
   }
 }

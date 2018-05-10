@@ -6,7 +6,7 @@
 .text-form__input {
   width: 100%;
   padding: 12px 13px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $gray;
 
   &::-webkit-input-placeholder {
     font-family: $oswald-font;
