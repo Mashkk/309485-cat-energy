@@ -1,6 +1,16 @@
 .company-logo {
   display: inline-block;
   vertical-align: middle;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

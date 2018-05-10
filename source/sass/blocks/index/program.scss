@@ -29,20 +29,97 @@
   }
 }
 
+.program::before {
+  content: "";
+  position: absolute;
+
+  width: 50px;
+  height: 50px;
+
+  top: 25px;
+  left: 22px;
+
+  border-radius: 50%;
+  background-color: $green;
+}
+
+.program__wrapper {
+  width: 100%;
+  padding: 29px 20px 19px 20px;
+}
+
+.program__name {
+  text-transform: uppercase;
+
+  margin: 0 0 30px 71px;
+  padding: 0;
+}
+
+.program__link-wrapper {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 14px;
+
+  border-top: 1px solid $gray-line;
+}
+
+.program__link {
+  position: relative;
+  padding-right: 59px;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $black-text;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+
+    top: 50%;
+    right: 9px;
+    transform: translateY(-50%);
+
+    background: url("../img/icon-right-arrow-long.svg") center no-repeat;
+  }
+
+  &:hover::before {
+    width: 33px;
+    right: 0;
+    background: url("../img/icon-right-arrow-verylong.svg") center no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.program__description {
+  @include reset();
+  padding-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .program {
     margin-bottom: 30px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .program {
-    width: 570px;
-    margin-bottom: 40px;
+  .program::before {
+    width: 200px;
+    height: 200px;
+
+    left: auto;
+    top: 92px;
+    right: 62px;
   }
-}
 
-@media (min-width: $tablet-width) {
+  .program__wrapper {
+    width: 51%;
+    padding: 67px 52px 60px;
+  }
+
   .program--losing-weight::after {
     width: 140px;
     height: 194px;
@@ -60,9 +137,48 @@
     top: 135px;
     right: 28px;
   }
+
+  .program__name {
+    margin-left: 0;
+  }
+
+  .program__description {
+    padding-bottom: 40px;
+  }
+
+  .program__link {
+    font-size: 20px;
+    border: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .program__name {
+    margin: 0 0 62px 162px;
+  }
+
+  .program__description {
+    padding-bottom: 15px;
+  }
+
+  .program {
+    width: 570px;
+    margin-bottom: 40px;
+  }
+
+  .program::before {
+    width: 100px;
+    height: 100px;
+
+    right: auto;
+    top: 47px;
+    left: 52px;
+  }
+
+  .program__wrapper {
+    width: 100%;
+  }
+
   .program--losing-weight::after {
     width: 70px;
     height: 97px;
@@ -79,120 +195,5 @@
     right: auto;
     top: 69px;
     left: 34px;
-  }
-}
-
-.program::before {
-  content: "";
-  position: absolute;
-
-  width: 50px;
-  height: 50px;
-
-  top: 25px;
-  left: 22px;
-
-  border-radius: 50%;
-  background-color: $green;
-}
-
-@media (min-width: $tablet-width) {
-  .program::before {
-    width: 200px;
-    height: 200px;
-
-    left: auto;
-    top: 92px;
-    right: 62px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program::before {
-    width: 100px;
-    height: 100px;
-
-    right: auto;
-    top: 47px;
-    left: 52px;
-  }
-}
-
-.program__wrapper {
-  width: 100%;
-  padding: 29px 20px 19px 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .program__wrapper {
-    width: 51%;
-    padding: 82px 52px 63px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program__wrapper {
-    width: 100%;
-  }
-}
-
-.program__name {
-  text-transform: uppercase;
-
-  margin: 0 0 30px 71px;
-  padding: 0;
-}
-
-@media (min-width: $tablet-width) {
-  .program__name {
-    margin-left: 0;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program__name {
-    margin: 0 0 74px 162px;
-  }
-}
-
-.program__description {
-  @include reset();
-  padding-bottom: 20px;
-}
-
-@media (min-width: $tablet-width) {
-  .program__description {
-    padding-bottom: 40px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .program__description {
-    padding-bottom: 15px;
-  }
-}
-
-.program__link {
-  display: inline-block;
-  vertical-align: middle;
-
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $black-text;
-
-  width: 100%;
-  padding-top: 20px;
-
-  border-top: 1px solid $gray-line;
-
-  &:active {
-    color: rgba(17, 17, 17, 0.3);
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .program__link {
-    font-size: 20px;
-    border: none;
   }
 }

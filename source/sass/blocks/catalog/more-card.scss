@@ -1,6 +1,22 @@
 .more-card {
+  position: relative;
   border-bottom: 1px solid $gray;
   background-color: #ffffff;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 30px;
+    height: 30px;
+
+    left: 50%;
+    top: 27px;
+    transform: translateX(-50%);
+
+    background: url("../img/icon-plus-mobile.svg") center no-repeat;
+    opacity: 0.2;
+  }
 }
 
 .more-card__description {
@@ -24,6 +40,14 @@
 @media (min-width: $tablet-width) {
   .more-card {
     border: 1px solid $gray;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      top: 55px;
+
+      background: url("../img/icon-plus.svg") center no-repeat;
+    }
   }
 
   .more-card__description {

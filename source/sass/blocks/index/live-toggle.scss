@@ -4,18 +4,38 @@
   align-items: center;
 }
 
-.live-toggle__switch {
+.live-toggle__field {
   display: inline-block;
   vertical-align: middle;
+  position: relative;
 
   width: 84px;
   height: 14px;
 
   margin: 0 20px;
+  padding: 3px;
 
-  border: 1px solid #000000;
+  border: 1px solid $gray-line;
   border-radius: 6px;
   background-color: #ffffff;
+}
+
+.live-toggle__range {
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+
+  width: 35px;
+  height: 6px;
+
+  border-radius: 3px;
+  background-color: $green;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px $gray-line;
+  }
 }
 
 .live-toggle__button {
@@ -24,8 +44,47 @@
   border: 1px solid transparent;
   background-color: transparent;
   text-transform: uppercase;
+  border-bottom: 1px dotted $text-color;
 
-  &:hover {
-    border-bottom: 1px solid #000000;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $text-color;
+    outline: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .live-toggle__field {
+    width: 428px;
+    height: 6px;
+
+    border-radius: 2.5px;
+    background-color: $gray-line;
+  }
+
+  .live-toggle__range {
+    width: 34px;
+    height: 34px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border: 13px solid white;
+    border-radius: 50%;
+    background-color: $green;
+    box-shadow: 0 0 0 1px $gray-line;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 1px $gray-line,
+        0 2px 2px 2px $gray-line;
+      outline: none;
+    }
+
+    &:active {
+      box-shadow: 0 0 0 2px $green,
+        0 4px 2px 2px $gray-line;
+    }
   }
 }
