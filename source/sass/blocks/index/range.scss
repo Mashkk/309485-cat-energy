@@ -1,95 +1,95 @@
 // Проект "Ползунок" заморожен
-  // .range {
-  //   -webkit-appearance: none;
-  //   width: 84px;
-  //   border-radius: 6px;
+// .range {
+//   -webkit-appearance: none;
+//   width: 84px;
+//   border-radius: 6px;
 
-  //   &::-webkit-slider-thumb {
-  //     -webkit-appearance: none;
-  //   }
+//   &::-webkit-slider-thumb {
+//     -webkit-appearance: none;
+//   }
 
-  //   &::-ms-track {
-  //     width: 100%;
-  //     cursor: pointer;
-  //     background: transparent;
-  //     border-color: transparent;
-  //     color: transparent;
-  //   }
-  // }
+//   &::-ms-track {
+//     width: 100%;
+//     cursor: pointer;
+//     background: transparent;
+//     border-color: transparent;
+//     color: transparent;
+//   }
+// }
 
-  // //Оформление ползунка
-  // .range::-webkit-slider-thumb {
-  //   -webkit-appearance: none;
-  //   width: 35px;
-  //   height: 6px;
+// //Оформление ползунка
+// .range::-webkit-slider-thumb {
+//   -webkit-appearance: none;
+//   width: 35px;
+//   height: 6px;
 
-  //   background-color: $green;
-  //   border-radius: 3px;
-  //   cursor: pointer;
-  // }
+//   background-color: $green;
+//   border-radius: 3px;
+//   cursor: pointer;
+// }
 
-  // .range::-moz-range-thumb {
-  //   width: 35px;
-  //   height: 6px;
+// .range::-moz-range-thumb {
+//   width: 35px;
+//   height: 6px;
 
-  //   background-color: $green;
-  //   border-radius: 3px;
-  //   border: 0px;
-  //   cursor: pointer;
-  // }
+//   background-color: $green;
+//   border-radius: 3px;
+//   border: 0px;
+//   cursor: pointer;
+// }
 
-  // .range::-ms-thumb {
-  //   width: 35px;
-  //   height: 6px;
+// .range::-ms-thumb {
+//   width: 35px;
+//   height: 6px;
 
-  //   background-color: $green;
-  //   border-radius: 3px;
-  //   cursor: pointer;
-  // }
+//   background-color: $green;
+//   border-radius: 3px;
+//   cursor: pointer;
+// }
 
-  // //Оформление полосы диапазона
-  // .range::-webkit-slider-runnable-track {
-  //   width: 84px;
-  //   height: 14px;
-  //   padding: 3px;
+// //Оформление полосы диапазона
+// .range::-webkit-slider-runnable-track {
+//   width: 84px;
+//   height: 14px;
+//   padding: 3px;
 
-  //   background-color: white;
-  //   border: 1px solid $gray-line;
-  //   border-radius: 6px;
-  //   cursor: pointer;
-  // }
+//   background-color: white;
+//   border: 1px solid $gray-line;
+//   border-radius: 6px;
+//   cursor: pointer;
+// }
 
-  // .range::-moz-range-track {
-  //   width: 84px;
-  //   height: 14px;
-  //   padding-left: 3px;
-  //   padding-right: 3px;
+// .range::-moz-range-track {
+//   width: 84px;
+//   height: 14px;
+//   padding-left: 3px;
+//   padding-right: 3px;
 
-  //   background-color: white;
-  //   border: 1px solid $gray-line;
-  //   border-radius: 6px;
-  //   cursor: pointer;
-  // }
+//   background-color: white;
+//   border: 1px solid $gray-line;
+//   border-radius: 6px;
+//   cursor: pointer;
+// }
 
-  // .range::-ms-track {
-  //   width: 84px;
-  //   height: 14px;
-  //   padding: 3px;
+// .range::-ms-track {
+//   width: 84px;
+//   height: 14px;
+//   padding: 3px;
 
-  //   cursor: pointer;
-  //   background: transparent;
-  //   border-color: transparent;
-  //   border-radius: 6px;
-  //   border-width: 35px 0;
-  //   color: transparent;
-  // }
+//   cursor: pointer;
+//   background: transparent;
+//   border-color: transparent;
+//   border-radius: 6px;
+//   border-width: 35px 0;
+//   color: transparent;
+// }
 
-  // .range::-ms-fill-lower {
-  //   background-color: white;
-  //   border: 1px solid $gray-line;
-  // }
+// .range::-ms-fill-lower {
+//   background-color: white;
+//   border: 1px solid $gray-line;
+// }
 
-  // input[type=range]::-ms-fill-upper {
-  //   background-color: white;
-  //   border: 1px solid $gray-line;
-  // }
+// input[type=range]::-ms-fill-upper {
+//   background-color: white;
+//   border: 1px solid $gray-line;
+// }

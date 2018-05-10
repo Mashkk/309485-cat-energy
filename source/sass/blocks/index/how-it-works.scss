@@ -40,6 +40,7 @@
   &--leaf::before {
     background: url("../img/advantage-leaf@1x.png") no-repeat center,
       $green;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/advantage-leaf@2x.png") no-repeat center,
         $green;
@@ -50,6 +51,7 @@
   &--powder::before {
     background: url("../img/advantage-powder@1x.png") no-repeat center,
       $green;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/advantage-powder@2x.png") no-repeat center,
         $green;
@@ -60,6 +62,7 @@
   &--dining::before {
     background: url("../img/advantage-dining@1x.png") no-repeat center,
       $green;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/advantage-dining@2x.png") no-repeat center,
         $green;
@@ -70,6 +73,7 @@
   &--clock::before {
     background: url("../img/advantage-clock@1x.png") no-repeat center,
       $green;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/advantage-clock@2x.png") no-repeat center,
         $green;
