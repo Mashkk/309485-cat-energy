@@ -42,20 +42,20 @@
 @media (min-width: $tablet-width) {
   .social-block {
     width: 150px;
-  }
 
-  .social-block__icon--vk {
-    width: 30px;
-    height: 16px;
-  }
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
 
-  .social-block__icon--insta {
-    width: 23px;
-    height: 23px;
-  }
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
 
-  .social-block__icon--fb {
-    width: 14px;
-    height: 28px;
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

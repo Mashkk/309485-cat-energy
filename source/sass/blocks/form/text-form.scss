@@ -14,6 +14,16 @@
     text-transform: uppercase;
     color: #444444;
   }
+
+  &:hover {
+    border-color: $gray-line;
+  }
+
+  &:focus,
+  &:active {
+    border-color: $text-color;
+    outline: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
