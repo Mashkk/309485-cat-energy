@@ -35,9 +35,30 @@
 }
 
 .questionnaire__title {
+  position: relative;
   text-transform: initial;
   line-height: 1;
   margin-bottom: 34px;
+  overflow: visible;
+  margin-left: -20px;
+  padding: 0 20px;
+  background-color: white;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    height: 2px;
+    width: 100vw;
+    z-index: -1;
+
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+
+    background-color: $green;
+  }
 }
 
 .questionnaire__button-wrapper {
