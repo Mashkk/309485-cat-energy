@@ -39,18 +39,18 @@
     outline: none;
   }
 
-  // &:invalid {
-  //   border-color: #ff8282;
-  // }
+  &:invalid {
+    border-color: #ff8282;
+  }
 
   &:focus + .text-form__icon,
   &:active + .text-form__icon {
     fill: $green;
   }
 
-  // &:invalid + .text-form__icon {
-  //   fill: #ff8282;
-  // }
+  &:invalid + .text-form__icon {
+    fill: #ff8282;
+  }
 }
 
 @media (min-width: $tablet-width) {
