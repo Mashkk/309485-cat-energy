@@ -22,7 +22,7 @@
   padding: 12px 13px;
   border: 1px solid $gray;
 
-  &::-webkit-input-placeholder {
+  &::placeholder {
     font-family: $oswald-font;
     font-size: 16px;
     text-transform: uppercase;
@@ -59,7 +59,7 @@
     padding-left: 18px;
     font-size: 20px;
 
-    &::-webkit-input-placeholder {
+    &::placeholder {
       font-size: 20px;
     }
   }

@@ -35,30 +35,9 @@
 }
 
 .questionnaire__title {
-  position: relative;
-  text-transform: initial;
+  text-transform: none;
   line-height: 1;
   margin-bottom: 34px;
-  overflow: visible;
-  margin-left: -20px;
-  padding: 0 20px;
-  background-color: white;
-
-  &::before {
-    content: "";
-    position: absolute;
-
-    height: 2px;
-    width: 100vw;
-    z-index: -1;
-
-    top: 50%;
-    left: 0;
-    right: 0;
-    transform: translateY(-50%);
-
-    background-color: $green;
-  }
 }
 
 .questionnaire__button-wrapper {
@@ -85,11 +64,10 @@
     content: "";
     position: absolute;
 
-    width: 768px;
+    width: 1000px;
     height: 1px;
 
     top: 0;
-
     transform: translateX(-50%);
 
     background-color: $gray;
@@ -115,6 +93,10 @@
 
   .questionnaire__title {
     margin-bottom: 76px;
+
+    &--contacts br {
+      display: none;
+    }
   }
 
   .questionnaire__item {
