@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Cat Energy</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script>
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.min.js" async></script>
-    <script src="js/svg4everybody.min.js"></script>
-    <script>svg4everybody();</script>
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
 
   <body class="form-page">
-
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
 
       <div class="page-header__container container">
@@ -39,7 +40,7 @@
                 <a class="site-list__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link site-list__link--active" >Подбор программы</a>
+                <a class="site-list__link site-list__link--active">Подбор программы</a>
               </li>
             </ul>
           </div>
@@ -60,11 +61,11 @@
             <fieldset class="questionnaire__fieldset text-form">
               <div class="questionnaire__item text-form__wrapper">
                 <label class="text-form__label" for="pet-name">Имя:*</label>
-                <input class="text-form__input" id="pet-name" type="text" placeholder="Барсик" required>
+                <input class="text-form__input" id="pet-name" type="text" placeholder="Барсик" required="">
               </div>
               <div class="questionnaire__item text-form__wrapper">
                 <label class="text-form__label" for="pet-weight">Вес (кг):*</label>
-                <input class="text-form__input" id="pet-weight" type="text" placeholder="7" pattern="[1-9]{1,2}" required>
+                <input class="text-form__input" id="pet-weight" type="text" placeholder="7" pattern="[1-9]{1,2}" required="">
               </div>
               <div class="questionnaire__item text-form__wrapper">
                 <label class="text-form__label" for="pet-age">Возраст (лет):</label>
@@ -74,7 +75,7 @@
 
             <fieldset class="questionnaire__fieldset questionnaire__fieldset--gray-border radio-form custom-box">
               <div class="questionnaire__item radio-form__wrapper">
-                <input class="visually-hidden" id="losing-weight" name="pets-problems" type="radio" value="losing-weight" checked>
+                <input class="visually-hidden" id="losing-weight" name="pets-problems" type="radio" value="losing-weight" checked="">
                 <label class="custom-box__label custom-box__label--radio" for="losing-weight">Похудение</label>
               </div>
               <div class="questionnaire__item radio-form__wrapper">
@@ -82,38 +83,47 @@
                 <label class="custom-box__label custom-box__label--radio" for="gain-weight">Набор массы</label>
               </div>
               <div class="questionnaire__item radio-form__wrapper">
-                <input class="visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite" disabled>
+                <input class="visually-hidden" id="indefinite" name="pets-problems" type="radio" value="indefinite" disabled="">
                 <label class="custom-box__label custom-box__label--radio" for="indefinite">Не знаю (нужен ваш совет)</label>
               </div>
             </fieldset>
           </div>
 
-          <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line text-form">
-            <legend class="questionnaire__title title title--small">Контактные данные (владельца кота)</legend>
+          <fieldset class="questionnaire__fieldset text-form">
+            <legend class="questionnaire__title questionnaire__title--contacts title title--small">
+              <span class="green-line">Контактные данные <br>
+                (владельца кота)</span>
+            </legend>
             <div class="questionnaire__fieldset-wrapper">
-              <div class="questionnaire__item text-form__wrapper">
+              <div class="questionnaire__item text-form__wrapper text-form__wrapper--icon">
                 <label class="text-form__label" for="owners-email">E-mail:*</label>
-                <input class="text-form__input" id="owners-email" type="email" placeholder="kuklachev@gmail.com" required>
+                <input class="text-form__input" id="owners-email" type="email" placeholder="kuklachev@gmail.com" required="">
+                <svg class="text-form__icon" width="17" height="13"><use xlink:href="#icon-sprite-mail"></use></svg>
               </div>
-              <div class="questionnaire__item text-form__wrapper">
+              <div class="questionnaire__item text-form__wrapper text-form__wrapper--icon">
                 <label class="text-form__label" for="owners-phone-number">Телефон:*</label>
-                <input class="text-form__input" id="owners-phone-number" type="text" placeholder="8 (960) 900-60-90" pattern="\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" required>
+                <input class="text-form__input" id="owners-phone-number" type="tel" placeholder="8 (960) 900-60-90" pattern="8 ([0-9]) {3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required="">
+                <svg class="text-form__icon" width="20" height="20"><use xlink:href="#icon-sprite-phone"></use></svg>
               </div>
             </div>
           </fieldset>
 
-          <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line comments text-form">
-            <legend class="questionnaire__title title title--small">Комментарий</legend>
+          <fieldset class="questionnaire__fieldset comments text-form">
+            <legend class="questionnaire__title title title--small">
+              <span class="green-line">Комментарий</span>
+            </legend>
             <div class="questionnaire__fieldset-wrapper">
               <textarea class="comments__input text-form__input" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
 
-          <fieldset class="questionnaire__fieldset questionnaire__fieldset--green-line check-form custom-box">
-            <legend class="questionnaire__title title title--small">Дополнительно</legend>
+          <fieldset class="questionnaire__fieldset check-form custom-box">
+            <legend class="questionnaire__title title title--small">
+              <span class="green-line">Дополнительно</span>
+            </legend>
             <div class="questionnaire__fieldset-wrapper">
               <div class="questionnaire__item check-form__wrapper">
-                <input class="visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked disabled>
+                <input class="visually-hidden" id="sweetener" name="extra-field" type="checkbox" value="сахарозаменитель" checked="" disabled="">
                 <label class="custom-box__label custom-box__label--check" for="sweetener">Сахарозаменитель</label>
               </div>
               <div class="questionnaire__item check-form__wrapper">
@@ -121,7 +131,7 @@
                 <label class="custom-box__label custom-box__label--check" for="water">Питьевая вода</label>
               </div>
               <div class="questionnaire__item check-form__wrapper">
-                <input class="visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко" disabled>
+                <input class="visually-hidden" id="milk" name="extra-field" type="checkbox" value="молоко" disabled="">
                 <label class="custom-box__label custom-box__label--check" for="milk">Молоко</label>
               </div>
               <div class="questionnaire__item check-form__wrapper">
@@ -152,11 +162,14 @@
 
         <div class="location__map-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1260px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 748px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
             <source media="(min-width: 1260px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 748px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="location__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1525951051146" width="320" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1525951051146" width="320" height="362" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </div>
       </section>
 
@@ -170,19 +183,19 @@
             <li class="social-block__item">
               <a class="social-block__link social-block__link--vk" href="#">
                 Ссылка на нас в Вконтакте
-                <svg class="social-block__icon social-block__icon--vk" width="22" height="12"><use xlink:href="img/sprite.svg#vk-icon"></use></svg>
+                <svg class="social-block__icon social-block__icon--vk" width="22" height="12"><use xlink:href="#icon-sprite-vk-mobile"></use></svg>
               </a>
             </li>
             <li class="social-block__item">
               <a class="social-block__link social-block__link--instagram" href="#">
                 Ссылка на нас в Инстаграм
-                <svg class="social-block__icon social-block__icon--insta" width="16" height="16"><use xlink:href="img/sprite.svg#insta-icon"></use></svg>
+                <svg class="social-block__icon social-block__icon--insta" width="16" height="16"><use xlink:href="#icon-sprite-insta-mobile"></use></svg>
               </a>
             </li>
             <li class="social-block__item">
               <a class="social-block__link social-block__link--facebook" href="#">
                 Ссылка на нас в Фэйсбук
-                <svg class="social-block__icon social-block__icon--fb" width="10" height="19"><use xlink:href="img/sprite.svg#fb-icon"></use></svg>
+                <svg class="social-block__icon social-block__icon--fb" width="10" height="19"><use xlink:href="#icon-sprite-fb-mobile"></use></svg>
               </a>
             </li>
           </ul>
@@ -191,7 +204,7 @@
         <div class="footer-links__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__link-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+            <svg class="copyright__link-image" width="27" height="34" alt="Логотип HTML Academy"><use xlink:href="icon-sprite-htmlacademy"></use></svg>
           </a>
         </div>
       </div>

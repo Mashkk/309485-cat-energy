@@ -4,15 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script>
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.min.js" async></script>
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
 
   <body>
-
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
 
       <div class="page-header__container container">
@@ -55,6 +57,9 @@
           <p class="product-promotion__slogan">Занялся собой? Займись котом!</p>
           <div class="product-promotion__image-wrapper">
             <picture>
+              <source type="image/webp" media="(min-width: 1260px)" srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 748px)" srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
               <source media="(min-width: 1260px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 748px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
               <img class="product-promotion__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy PRO со вкусом курицы">
@@ -154,14 +159,20 @@
           <div class="live-demo__slider">
             <div class="live-demo__image-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1260px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 748px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 1260px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
                 <source media="(min-width: 748px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
                 <img class="live-demo__slider-image live-demo__slider-image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до корма Cat Energy Slim">
               </picture>
               <picture>
+                <source type="image/webp" media="(min-width: 1260px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 748px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
                 <source media="(min-width: 1260px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
                 <source media="(min-width: 748px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="live-demo__slider-image live-demo__slider-image--after visually-hidden" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот после замены обычного корма на Cat Energy Slim">
+                <img class="live-demo__slider-image live-demo__slider-image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот после замены обычного корма на Cat Energy Slim">
               </picture>
             </div>
             <div class="live-demo__toggle live-toggle">
@@ -189,11 +200,14 @@
 
         <div class="location__map-wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1260px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 748px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
             <source media="(min-width: 1260px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 748px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
             <img class="location__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Мы находимся по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
           </picture>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1525951051146" width="320" height="362" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1525951051146" width="320" height="362" frameborder="0" style="border:0" allowfullscreen=""></iframe>
         </div>
       </section>
 
@@ -207,19 +221,19 @@
             <li class="social-block__item">
               <a class="social-block__link" href="#">
                 Ссылка на нас в Вконтакте
-                <svg class="social-block__icon social-block__icon--vk" width="22" height="12"><use xlink:href="img/sprite.svg#vk-icon"></use></svg>
+                <svg class="social-block__icon social-block__icon--vk" width="22" height="12"><use xlink:href="#icon-sprite-vk-mobile"></use></svg>
               </a>
             </li>
             <li class="social-block__item">
               <a class="social-block__link" href="#">
                 Ссылка на нас в Инстаграм
-                <svg class="social-block__icon social-block__icon--insta" width="16" height="16"><use xlink:href="img/sprite.svg#insta-icon"></use></svg>
+                <svg class="social-block__icon social-block__icon--insta" width="16" height="16"><use xlink:href="#icon-sprite-insta-mobile"></use></svg>
               </a>
             </li>
             <li class="social-block__item">
               <a class="social-block__link" href="#">
                 ССлыка на нас в Фэйсбук
-                <svg class="social-block__icon social-block__icon--fb" width="10" height="19"><use xlink:href="img/sprite.svg#fb-icon"></use></svg>
+                <svg class="social-block__icon social-block__icon--fb" width="10" height="19"><use xlink:href="#icon-sprite-fb-mobile"></use></svg>
               </a>
             </li>
           </ul>
@@ -228,7 +242,7 @@
         <div class="footer-links__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <img class="copyright__link-image" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+            <svg class="copyright__link-image" width="27" height="34" alt="Логотип HTML Academy"><use xlink:href="#icon-sprite-htmlacademy"></use></svg>
           </a>
         </div>
       </div>

@@ -35,7 +35,7 @@
 }
 
 .questionnaire__title {
-  text-transform: initial;
+  text-transform: none;
   line-height: 1;
   margin-bottom: 34px;
 }
@@ -64,11 +64,10 @@
     content: "";
     position: absolute;
 
-    width: 768px;
+    width: 1000px;
     height: 1px;
 
     top: 0;
-
     transform: translateX(-50%);
 
     background-color: $gray;
@@ -94,6 +93,10 @@
 
   .questionnaire__title {
     margin-bottom: 76px;
+
+    &--contacts br {
+      display: none;
+    }
   }
 
   .questionnaire__item {

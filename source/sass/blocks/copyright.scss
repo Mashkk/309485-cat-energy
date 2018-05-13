@@ -2,6 +2,10 @@
   width: 100%;
 }
 
+.copyright__link-image {
+  fill: #666666;
+}
+
 .copyright__link {
   display: flex;
   justify-content: space-between;
@@ -10,8 +14,17 @@
   width: 100%;
 
   text-decoration: none;
-  color: $black-text;
+  color: $text-color;
   font-family: $text-font;
+
+  &:hover .copyright__link-image,
+  &:focus .copyright__link-image {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -21,5 +34,9 @@
 
   .copyright__link {
     justify-content: flex-end;
+  }
+
+  .copyright__text {
+    margin-right: 22px;
   }
 }
