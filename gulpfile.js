@@ -12,6 +12,7 @@ var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 
 gulp.task("style", function() {
@@ -30,7 +31,9 @@ gulp.task("style", function() {
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
-    .pipe(posthtml())
+    .pipe(posthtml([
+      include()
+    ]))
     .pipe(gulp.dest("source"));
 });
 
