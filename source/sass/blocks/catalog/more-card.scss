@@ -11,7 +11,7 @@
     height: 30px;
 
     left: 50%;
-    top: 27px;
+    top: 26px;
     transform: translateX(-50%);
 
     background: url("../img/icon-plus-mobile.svg") center no-repeat;
@@ -27,11 +27,13 @@
 .more-card__text {
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 22px;
+  padding-bottom: 21px;
+  font-size: 12px;
 
   &--bold {
     margin: 0 auto;
-    padding-bottom: 14px;
+    padding-bottom: 9px;
+    font-size: 16px;
     font-weight: 400;
     text-transform: uppercase;
   }
@@ -44,22 +46,26 @@
     &::before {
       width: 60px;
       height: 60px;
-      top: 55px;
+      top: 54px;
 
       background: url("../img/icon-plus.svg") center no-repeat;
     }
   }
 
   .more-card__description {
-    margin-top: 166px;
+    margin-top: 162px;
   }
 
   .more-card__text {
     width: 180px;
+    line-height: 1.2;
+    font-size: 16px;
 
     &--bold {
       width: 136px;
       font-size: 20px;
+      line-height: 1;
+      padding-bottom: 25px;
     }
   }
 }

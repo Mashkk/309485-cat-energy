@@ -15,7 +15,13 @@
   }
 
   .page-header__wrapper {
-    padding: 12px 20px 13px;
+    padding: 12px 20px 12px;
+    border-bottom: 1px solid $gray;
+  }
+
+  .main-page .page-header__wrapper {
+    padding-bottom: 13px;
+    border: none;
   }
 }
 
