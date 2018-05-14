@@ -9,7 +9,18 @@
   @include reset-list();
 }
 
+@media (min-width: $tablet-width) {
+  .diet-programs {
+    margin-top: -2px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .diet-programs {
+    margin-bottom: 27px;
+  }
+
   .diet-programs__list {
     flex-direction: row;
     justify-content: space-between;

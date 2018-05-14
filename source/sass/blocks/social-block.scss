@@ -42,7 +42,13 @@
 @media (min-width: $tablet-width) {
   .social-block {
     width: 150px;
+  }
 
+  .social-block__item {
+    padding-right: 31px;
+  }
+
+  .social-block__icon {
     &--vk {
       width: 30px;
       height: 16px;

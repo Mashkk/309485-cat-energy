@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
 
-  padding-top: 35px;
+  padding-top: 36px;
   padding-bottom: 20px;
 
   background-color: $gray;
@@ -11,8 +11,8 @@
 
 .footer-links__list-wrapper {
   width: 280px;
-  margin: 30px 0;
-  padding: 22px 0;
+  margin: 28px 0 21px;
+  padding: 23px 0 20px;
 
   border-top: 1px solid $gray-line;
   border-bottom: 1px solid $gray-line;
@@ -21,17 +21,33 @@
 @media (min-width: $tablet-width) {
   .footer-links {
     flex-direction: row;
-    padding: 28px 30px;
+    padding: 10px 20px 28px;
     justify-content: space-between;
   }
 
   .footer-links__logo-wrapper {
     width: 33.33%;
     text-align: left;
+    margin-top: 13px;
   }
 
   .footer-links__list-wrapper {
     width: 33.33%;
     border: none;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-links {
+    padding-top: 20px;
+  }
+
+  .footer-links__list-wrapper {
+    margin: 0;
+  }
+
+  .footer-links__logo-wrapper {
+    margin-top: 5px;
   }
 }

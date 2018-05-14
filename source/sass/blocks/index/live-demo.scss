@@ -1,21 +1,22 @@
 .live-demo {
   background-color: $gray;
+  overflow: hidden;
 }
 
 .live-demo__container {
   display: flex;
   flex-direction: column;
   align-content: center;
+  overflow: visible;
 }
 
 .live-demo__wrapper {
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .live-demo__slider {
   width: 100%;
-  margin-bottom: 17px;
 }
 
 .live-demo__slider-image--after {
@@ -29,11 +30,11 @@
 
 .live-demo__slider-image {
   height: auto;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
 .live-demo__toggle {
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 }
 
 .live-demo__title {
@@ -51,19 +52,47 @@
   margin-bottom: 25px;
 }
 
+@media (max-width: 747px) {
+  .live-demo__image-wrapper {
+    width: 320px;
+    margin-left: -20px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .live-demo {
+    margin-top: -64px;
     border-top: 1px solid $gray;
-    background: linear-gradient(to bottom, #ffffff 67%, $gray 67%);
+    background: linear-gradient(to bottom, #ffffff 619px, $gray 619px);
+  }
+
+  .live-demo__toggle {
+    padding-bottom: 70px;
   }
 
   .live-demo__wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 86px;
   }
 
-  .live-demo__title,
+  .live-demo__title {
+    margin: 26px 0 45px;
+  }
+
   .live-demo__description {
-    margin: 53px 0;
+    margin-bottom: 53px;
+    width: 700px;
+  }
+
+  .live-demo__description br {
+    display: none;
+  }
+
+  .live-demo__image-wrapper {
+    margin-left: 16px;
+  }
+
+  .live-demo__slider-image {
+    margin-bottom: 16px;
   }
 
   .live-demo__slider-image--before {
@@ -79,8 +108,10 @@
 
 @media (min-width: $desktop-width) {
   .live-demo {
+    margin-top: -58px;
     border: none;
-    background: linear-gradient(to bottom, #ffffff 20%, $gray 20%);
+    background: linear-gradient(to bottom, #ffffff 153px, $gray 153px);
+    overflow: visible;
   }
 
   .live-demo__container {
@@ -89,22 +120,29 @@
   }
 
   .live-demo__wrapper {
-    width: 40%;
+    width: 435px;
   }
 
   .live-demo__slider {
     width: 690px;
   }
 
+  .live-demo__slider-image {
+    margin-bottom: 37px;
+  }
+
   .live-demo__title {
-    margin: 0 0 145px;
+    margin: 0 0 128px;
   }
 
   .live-demo__description {
-    margin-bottom: 70px;
+    margin-bottom: 68px;
+    width: auto;
   }
 
   .live-demo__image-wrapper {
-    margin-top: -67px;
+    width: 690px;
+    margin-left: 40px;
+    margin-top: -36px;
   }
 }
