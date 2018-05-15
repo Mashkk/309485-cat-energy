@@ -15,6 +15,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
+var htmlmin = require("gulp-htmlmin");
 
 
 
@@ -37,6 +38,12 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("minify", function () {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
@@ -97,6 +104,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
+    "minify",
     ["style", "images"],
     ["webp", "sprite"],
     "html",
