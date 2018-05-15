@@ -11,7 +11,7 @@
 
 .footer-links__list-wrapper {
   width: 280px;
-  margin: 28px 0 21px;
+  margin: 28px 0 19px;
   padding: 23px 0 20px;
 
   border-top: 1px solid $gray-line;
@@ -21,20 +21,21 @@
 @media (min-width: $tablet-width) {
   .footer-links {
     flex-direction: row;
-    padding: 10px 20px 28px;
+    padding: 14px 20px 28px;
     justify-content: space-between;
   }
 
   .footer-links__logo-wrapper {
     width: 33.33%;
     text-align: left;
-    margin-top: 13px;
+    margin-top: 9px;
   }
 
   .footer-links__list-wrapper {
     width: 33.33%;
     border: none;
     padding-top: 20px;
+    margin-top: 23px;
   }
 }
 

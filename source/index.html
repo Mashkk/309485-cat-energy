@@ -11,7 +11,7 @@
     <script src="js/picturefill.min.js" async=""></script>
   </head>
 
-  <body class="main-page">
+  <body>
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
@@ -47,7 +47,7 @@
       </div>
     </header>
 
-    <main class="page-main">
+    <main>
       <h1 class="visually-hidden">Магазин функционального питания для котов Cat Energy</h1>
 
       <section class="product-promotion">
@@ -103,92 +103,95 @@
         </div>
       </section>
 
-      <section class="how-it-works">
-        <div class="how-it-works__container container">
-          <h2 class="how-it-works__title title">Как это работает</h2>
+      <div class="sections-wrapper">
 
-          <ul class="how-it-works__list">
-            <li class="how-it-works__item how-it-works__item--leaf text-font">
-              <p class="how-it-works__text-wrapper">
-                Функциональное питание содержит только полезные питательные вещества.
-              </p>
-            </li>
-            <li class="how-it-works__item how-it-works__item--powder text-font">
-              <p class="how-it-works__text-wrapper">
-                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-              </p>
-            </li>
-            <li class="how-it-works__item how-it-works__item--dining text-font">
-              <p class="how-it-works__text-wrapper">
-                Замените один-два приема обычной еды на наше функциональное питание.
-              </p>
-            </li>
-            <li class="how-it-works__item how-it-works__item--clock text-font">
-              <p class="how-it-works__text-wrapper">
-                Уже через месяц наслаждайтесь изменениями к лучшему
-                <br> вашего питомца!
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
+        <section class="how-it-works">
+          <div class="how-it-works__container container">
+            <h2 class="how-it-works__title title">Как это работает</h2>
 
-      <section class="live-demo">
-        <div class="live-demo__container container">
-          <div class="live-demo__wrapper">
-            <h2 class="live-demo__title title">Живой пример</h2>
-            <p class="live-demo__description text-font">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
-              <br> Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-            </p>
+            <ul class="how-it-works__list">
+              <li class="how-it-works__item how-it-works__item--leaf text-font">
+                <p class="how-it-works__text-wrapper">
+                  Функциональное питание содержит только полезные питательные вещества.
+                </p>
+              </li>
+              <li class="how-it-works__item how-it-works__item--powder text-font">
+                <p class="how-it-works__text-wrapper">
+                  Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+                </p>
+              </li>
+              <li class="how-it-works__item how-it-works__item--dining text-font">
+                <p class="how-it-works__text-wrapper">
+                  Замените один-два приема обычной еды на наше функциональное питание.
+                </p>
+              </li>
+              <li class="how-it-works__item how-it-works__item--clock text-font">
+                <p class="how-it-works__text-wrapper">
+                  Уже через месяц наслаждайтесь изменениями к лучшему
+                  <br> вашего питомца!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
 
-            <div class="live-demo__information-wrapper">
-              <div class="live-demo__information demo-info">
-                <div class="demo-info__wrapper demo-info__wrapper--weight">
-                  <div class="demo-info__value title title--small">5 кг</div>
-                  <div class="demo-info__description">снижение веса</div>
+        <section class="live-demo">
+          <div class="live-demo__container container">
+            <div class="live-demo__wrapper">
+              <h2 class="live-demo__title title">Живой пример</h2>
+              <p class="live-demo__description text-font">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+                <br> Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </p>
+
+              <div class="live-demo__information-wrapper">
+                <div class="live-demo__information demo-info">
+                  <div class="demo-info__wrapper demo-info__wrapper--weight">
+                    <div class="demo-info__value title title--small">5 кг</div>
+                    <div class="demo-info__description">снижение веса</div>
+                  </div>
+                  <div class="demo-info__wrapper demo-info__wrapper--time">
+                    <div class="demo-info__value title title--small">60 дней</div>
+                    <div class="demo-info__description">затрачено времени</div>
+                  </div>
                 </div>
-                <div class="demo-info__wrapper demo-info__wrapper--time">
-                  <div class="demo-info__value title title--small">60 дней</div>
-                  <div class="demo-info__description">затрачено времени</div>
+                <div class="demo-info__conclusion">
+                  <span>Затраты на питание:</span>
+                  <span>15 000 руб.</span>
                 </div>
               </div>
-              <div class="demo-info__conclusion">
-                <span>Затраты на питание:</span>
-                <span>15 000 руб.</span>
+            </div>
+
+            <div class="live-demo__slider">
+              <div class="live-demo__image-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1260px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 748px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                  <source media="(min-width: 1260px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 748px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="live-demo__slider-image live-demo__slider-image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до корма Cat Energy Slim">
+                </picture>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1260px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 748px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                  <source media="(min-width: 1260px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 748px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img class="live-demo__slider-image live-demo__slider-image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот после замены обычного корма на Cat Energy Slim">
+                </picture>
+              </div>
+              <div class="live-demo__toggle live-toggle">
+                <button class="live-toggle__button live-toggle__button--before" type="button">Было</button>
+                <div class="live-toggle__field">
+                  <div class="live-toggle__range" tabindex="0"></div>
+                </div>
+                <button class="live-toggle__button live-toggle__button--after" type="button">Стало</button>
               </div>
             </div>
           </div>
-
-          <div class="live-demo__slider">
-            <div class="live-demo__image-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 1260px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 748px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-                <source media="(min-width: 1260px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 748px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img class="live-demo__slider-image live-demo__slider-image--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Кот до корма Cat Energy Slim">
-              </picture>
-              <picture>
-                <source type="image/webp" media="(min-width: 1260px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 748px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-                <source media="(min-width: 1260px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-                <source media="(min-width: 748px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-                <img class="live-demo__slider-image live-demo__slider-image--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Кот после замены обычного корма на Cat Energy Slim">
-              </picture>
-            </div>
-            <div class="live-demo__toggle live-toggle">
-              <button class="live-toggle__button live-toggle__button--before" type="button">Было</button>
-              <div class="live-toggle__field">
-                <div class="live-toggle__range" tabindex="0"></div>
-              </div>
-              <button class="live-toggle__button live-toggle__button--after" type="button">Стало</button>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer page-footer--index-page">
@@ -250,7 +253,7 @@
         <div class="footer-links__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
-            <svg class="copyright__link-image" width="27" height="34" alt="Логотип HTML Academy"><use xlink:href="#icon-sprite-htmlacademy"></use></svg>
+            <svg class="copyright__link-image" width="40" height="40"><use xlink:href="#icon-sprite-htmlacademy"></use></svg>
           </a>
         </div>
       </div>

@@ -2,6 +2,10 @@
   &--icon {
     position: relative;
   }
+
+  &--icon .text-form__label {
+    margin-right: 12px;
+  }
 }
 
 .text-form__icon {
