@@ -41,16 +41,6 @@
   line-height: 1;
 }
 
-.demo-info__conclusion {
-  width: 100%;
-  padding-top: 37px;
-  margin: 0;
-
-  font-size: 14px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
 @media (min-width: $tablet-width) {
   .demo-info__wrapper {
     width: 162px;
@@ -72,36 +62,10 @@
     font-size: 14px;
     padding: 0 9px;
   }
-
-  .demo-info__conclusion {
-    width: 250px;
-    margin: 0;
-    margin-left: auto;
-    padding-top: 6px;
-    text-align: right;
-    font-size: 20px;
-    line-height: 1.5;
-  }
-
-  .demo-info__conclusion span {
-    display: block;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .demo-info__description {
     background-color: $gray;
-  }
-
-  .demo-info__conclusion {
-    width: 100%;
-    text-align: left;
-    padding-top: 53px;
-  }
-
-  .demo-info__conclusion span {
-    display: inline-block;
-    vertical-align: middle;
-    padding-right: 60px;
   }
 }

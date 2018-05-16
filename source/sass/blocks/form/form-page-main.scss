@@ -1,11 +1,9 @@
 .form-page-main {
-  padding-top: 23px;
   overflow: hidden;
 }
 
 .form-page-main__title {
-  margin-bottom: 35px;
-  line-height: inherit;
+  margin-bottom: 24px;
 }
 
 .form-page-main__description {
@@ -17,16 +15,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form-page-main {
-    padding-top: 32px;
-  }
-
   .form-page-main__container {
     padding: 0 57px 0 61px;
   }
 
   .form-page-main__title {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 
   .form-page-main__description {
@@ -37,11 +31,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .form-page-main {
-    padding-top: 49px;
-  }
-
   .form-page-main__container {
     padding: $desktop-padding;
+  }
+
+  .form-page-main__title {
+    margin-bottom: 41px;
   }
 }

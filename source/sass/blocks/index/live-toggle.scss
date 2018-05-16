@@ -24,6 +24,7 @@
   display: inline-block;
   vertical-align: middle;
   position: absolute;
+  cursor: pointer;
 
   width: 35px;
   height: 6px;
@@ -44,6 +45,7 @@
   border: 1px solid transparent;
   background-color: transparent;
   text-transform: uppercase;
+  cursor: pointer;
 
   &:hover,
   &:focus {

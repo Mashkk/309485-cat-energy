@@ -27,8 +27,6 @@
   border: 1px solid $gray;
 
   &::placeholder {
-    font-family: $oswald-font;
-    font-size: 16px;
     text-transform: uppercase;
     color: #444444;
   }
@@ -62,10 +60,6 @@
     padding-bottom: 15px;
     padding-left: 18px;
     font-size: 20px;
-
-    &::placeholder {
-      font-size: 20px;
-    }
   }
 
   .text-form__icon {

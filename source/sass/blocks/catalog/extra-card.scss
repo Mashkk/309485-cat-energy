@@ -46,8 +46,12 @@
   max-width: 325px;
 }
 
+.extra-card__table-value {
+  width: 185px;
+}
+
 .extra-card__table-value--right {
-  padding-left: 50px;
+  width: 95px;
   text-align: right;
 }
 
@@ -84,6 +88,10 @@
     justify-content: flex-end;
     padding-left: 40px;
   }
+
+  .extra-card__table-value {
+    text-align: right;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -117,5 +125,15 @@
     min-width: 245px;
     max-width: 245px;
     margin-left: auto;
+  }
+
+  //IE
+  .extra-card__table-value {
+    width: 245px;
+    text-align: left;
+
+    &--right {
+      width: 60px;
+    }
   }
 }

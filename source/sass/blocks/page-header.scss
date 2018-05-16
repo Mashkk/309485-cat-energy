@@ -1,3 +1,7 @@
+.page-header--iner-page {
+  margin-bottom: 18px;
+}
+
 .page-header__container {
   display: flex;
   flex-direction: column;
@@ -26,6 +30,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-header--iner-page{
+    margin-bottom: 20px;
+  }
+
   .page-header__container {
     flex-direction: row;
     align-items: baseline;
@@ -40,6 +48,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-header--iner-page {
+    margin-bottom: 34px;
+  }
+
   .page-header__container {
     padding-top: 59px;
   }
