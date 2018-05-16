@@ -4,23 +4,38 @@
 
 @media (min-width: $tablet-width) {
   .check-form .questionnaire__title {
-    margin-bottom: 54px;
+    margin-bottom: 59px;
   }
 
   .check-form .questionnaire__fieldset-wrapper {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
   .check-form__wrapper {
-    width: 282px;
+    width: 285px;
     margin-bottom: 42px;
+    margin-right: 60px;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .check-form__wrapper {
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .check-form__wrapper {
     width: 245px;
+    margin-right: 80px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
   .check-form .questionnaire__title {

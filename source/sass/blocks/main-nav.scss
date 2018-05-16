@@ -71,7 +71,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: auto;
+    width: 516px;
   }
 
   .main-nav__toggle {
@@ -81,6 +81,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
+    width: 895px;
+
     &--index-page {
       width: 50%;
     }
