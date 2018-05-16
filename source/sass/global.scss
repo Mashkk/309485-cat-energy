@@ -13,6 +13,8 @@ body {
   line-height: 1.2;
   color: $black-text;
   background-color: #ffffff;
+  //IE
+  overflow-x: hidden;
 }
 
 img {
@@ -20,5 +22,5 @@ img {
 }
 
 iframe {
-  border: 0;
+  border: none;
 }

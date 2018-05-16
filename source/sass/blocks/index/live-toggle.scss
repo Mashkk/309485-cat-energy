@@ -50,7 +50,6 @@
   &:hover,
   &:focus {
     border-bottom: 1px solid $text-color;
-    outline: none;
   }
 }
 
@@ -76,13 +75,13 @@
     background-color: $green;
     box-shadow: 0 0 0 1px $gray-line;
 
-    &:hover,
-    &:focus {
+    &:hover {
       box-shadow: 0 0 0 1px $gray-line,
         0 2px 2px 2px $gray-line;
       outline: none;
     }
 
+    &:focus,
     &:active {
       box-shadow: 0 0 0 2px $green,
         0 4px 2px 2px $gray-line;

@@ -30,21 +30,21 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-decoration: none;
-}
 
-.social-block__icon {
-  fill: $ico-color;
-
-  &:hover,
-  &:focus {
+  &:hover .social-block__icon,
+  &:focus .social-block__icon {
     outline: none;
     fill: $green;
   }
 
-  &:active {
+  &:active .social-block__icon {
     fill: $green;
     opacity: 0.3;
   }
+}
+
+.social-block__icon {
+  fill: $ico-color;
 }
 
 @media (min-width: $tablet-width) {

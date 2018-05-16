@@ -86,7 +86,9 @@
 }
 
 input[type="radio"]:hover:not(:disabled) + .custom-box__label::before,
-input[type="checkbox"]:hover:not(:disabled) + .custom-box__label::before {
+input[type="radio"]:focus:not(:disabled) + .custom-box__label::before,
+input[type="checkbox"]:hover:not(:disabled) + .custom-box__label::before,
+input[type="checkbox"]:focus:not(:disabled) + .custom-box__label::before {
   border-color: $gray-line;
 }
 

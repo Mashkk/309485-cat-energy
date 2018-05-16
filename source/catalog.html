@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cat Energy</title>
-    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       document.createElement( "picture" );
@@ -12,7 +12,7 @@
     <script src="js/picturefill.min.js" async=""></script>
   </head>
 
-  <body class="catalog-page">
+  <body class="catalog-page iner-page">
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
@@ -29,7 +29,7 @@
           </a>
         </div>
 
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__list-wrapper">
               <ul class="main-nav__list site-list">
@@ -428,9 +428,11 @@
       </section>
 
       <div class="page-footer__links footer-links container">
-        <a class="footer-links__logo-wrapper company-logo" href="index.html">
-          <img class="footer-links__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
-        </a>
+        <div class="footer-links__logo-wrapper">
+          <a class="footer-links__logo-link company-logo" href="index.html">
+            <img class="footer-links__logo" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
+          </a>
+        </div>
 
         <div class="footer-links__list-wrapper">
           <ul class="footer-links__list social-block">
