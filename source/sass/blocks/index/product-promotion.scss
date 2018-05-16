@@ -100,9 +100,9 @@
   .product-promotion {
     min-height: 698px;
     margin-bottom: 81px;
-    margin-top: -136px;
+    margin-top: -200px;
 
-    background: url("../img/index-background-desktop@1x.jpg") right no-repeat,
+    background: url("../img/index-background-desktop@1x.jpg") right bottom no-repeat,
       linear-gradient(to right, #ffffff 50%, #64a83b 50%);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -112,7 +112,7 @@
   }
 
   .product-promotion__wrapper {
-    padding: 222px 40px 0 100px;
+    padding: 287px 40px 53px 100px;
   }
 
   .product-promotion__image-wrapper {
