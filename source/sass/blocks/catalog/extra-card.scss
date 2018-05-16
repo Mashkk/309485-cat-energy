@@ -114,7 +114,8 @@
   }
 
   .extra-card__button-order {
-    width: 245px;
+    min-width: 245px;
+    max-width: 245px;
     margin-left: auto;
   }
 }
