@@ -50,6 +50,7 @@
 
 .program__name {
   text-transform: uppercase;
+  word-break: break-word;
 
   margin: 0 0 30px 71px;
   padding: 0;
@@ -120,7 +121,6 @@
   }
 
   .program__wrapper {
-    width: 51%;
     padding: 67px 52px 60px;
   }
 
@@ -143,12 +143,13 @@
   }
 
   .program__name {
+    max-width: 304px;
     margin-left: 0;
     margin-bottom: 13px;
   }
 
   .program__description {
-    width: 375px;
+    max-width: 360px;
     padding-bottom: 35px;
   }
 
@@ -162,6 +163,7 @@
   }
 
   .program__link-wrapper {
+    max-width: 360px;
     border: none;
   }
 }
@@ -173,7 +175,7 @@
 
   .program__description {
     padding-bottom: 11px;
-    width: auto;
+    max-width: 100%;
   }
 
   .program__description br {
@@ -214,5 +216,9 @@
     right: auto;
     top: 69px;
     left: 34px;
+  }
+
+  .program__link-wrapper {
+    max-width: 100%;
   }
 }
