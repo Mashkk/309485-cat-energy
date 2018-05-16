@@ -45,6 +45,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-top: 25px;
 }
 
 .live-demo__description {
@@ -78,8 +79,11 @@
     margin: 26px 0 45px;
   }
 
+  .live-demo__information-wrapper {
+    margin-top: 53px;
+  }
+
   .live-demo__description {
-    margin-bottom: 53px;
     width: 700px;
   }
 
@@ -117,6 +121,7 @@
   .live-demo__container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
   }
 
   .live-demo__wrapper {
@@ -137,8 +142,11 @@
   }
 
   .live-demo__description {
-    margin-bottom: 68px;
     width: auto;
+  }
+
+  .live-demo__information-wrapper {
+    margin-top: 68px;
   }
 
   .live-demo__image-wrapper {
