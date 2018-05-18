@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Cat Energy</title>
-    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       document.createElement( "picture" );
@@ -13,7 +13,7 @@
     <script src="js/picturefill.min.js" async=""></script>
   </head>
 
-  <body class="form-page iner-page">
+  <body class="form-page inner-page">
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
@@ -66,11 +66,11 @@
               </div>
               <div class="questionnaire__item text-form__wrapper">
                 <label class="text-form__label" for="pet-weight">Вес (кг):*</label>
-                <input class="text-form__input" id="pet-weight" type="text" placeholder="7" pattern="[1-9]{1,2}" required="">
+                <input class="text-form__input" id="pet-weight" type="number" placeholder="7" min="1" required="">
               </div>
               <div class="questionnaire__item text-form__wrapper">
                 <label class="text-form__label" for="pet-age">Возраст (лет):</label>
-                <input class="text-form__input" id="pet-age" type="text" placeholder="7" pattern="[1-9]{1,2}">
+                <input class="text-form__input" id="pet-age" type="number" placeholder="7" min="1" max="20">
               </div>
             </fieldset>
 
