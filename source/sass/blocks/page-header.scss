@@ -30,7 +30,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header--iner-page {
+  .page-header--inner-page {
     margin-bottom: 20px;
   }
 
@@ -48,11 +48,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-header--iner-page {
+  .page-header--inner-page {
     margin-bottom: 34px;
   }
 
   .page-header__container {
-    padding-top: 59px;
+    padding-top: 57px;
   }
 }
