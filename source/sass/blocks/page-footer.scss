@@ -4,6 +4,10 @@
 
   margin-top: 35px;
   background-color: $gray;
+
+  &--form-page {
+    margin-top: 31px;
+  }
 }
 
 .page-footer--index-page {
@@ -13,6 +17,10 @@
 @media (min-width: $tablet-width) {
   .page-footer {
     margin-top: 76px;
+
+    &--form-page {
+      margin-top: 72px;
+    }
   }
 
   .page-footer--index-page {
@@ -22,7 +30,11 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    margin-top: 88px;
+    margin-top: 86px;
+
+    &--form-page {
+      margin-top: 82px;
+    }
   }
 
   .page-footer--index-page {

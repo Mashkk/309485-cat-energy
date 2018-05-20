@@ -24,6 +24,7 @@
   display: inline-block;
   vertical-align: middle;
   position: absolute;
+  cursor: pointer;
 
   width: 35px;
   height: 6px;
@@ -44,12 +45,11 @@
   border: 1px solid transparent;
   background-color: transparent;
   text-transform: uppercase;
-  border-bottom: 1px dotted $text-color;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     border-bottom: 1px solid $text-color;
-    outline: none;
   }
 }
 
@@ -75,16 +75,27 @@
     background-color: $green;
     box-shadow: 0 0 0 1px $gray-line;
 
-    &:hover,
-    &:focus {
+    &:hover {
       box-shadow: 0 0 0 1px $gray-line,
         0 2px 2px 2px $gray-line;
       outline: none;
     }
 
+    &:focus,
     &:active {
       box-shadow: 0 0 0 2px $green,
         0 4px 2px 2px $gray-line;
     }
+  }
+
+  .live-toggle__button {
+    border-bottom: 1px dotted $text-color;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .live-toggle {
+    justify-content: flex-end;
   }
 }

@@ -5,7 +5,6 @@
 }
 
 body {
-  min-width: 320px;
   margin: 0 auto;
   padding: 0;
   font-family: $oswald-font;
@@ -17,4 +16,8 @@ body {
 
 img {
   max-width: 100%;
+}
+
+iframe {
+  border: none;
 }

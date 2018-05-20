@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .cat-mask .live-demo__slider-image--before {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    position: absolute;
+    display: block;
+  }
+
+  .cat-mask .live-demo__slider-image--after {
+    display: block;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
+}
+//Достаточная реализация слайдера без JS,  clip-path некорректно поддерживается в IE11, маску можно отключить убрав класс .cat-mask

@@ -7,7 +7,7 @@
 
 .location__wrapper {
   width: 100%;
-  padding: 30px 0;
+  padding: 30px 0 27px;
   background-color: $gray;
 }
 
@@ -33,33 +33,43 @@
 }
 
 .location__map-wrapper {
-  position: relative;
+  overflow: hidden;
 
   width: 100%;
   min-height: 365px;
 
   background-color: $gray;
+  text-align: center;
+
+  &--no-js .location__map-image {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &--no-js .js-map {
+    display: none;
+  }
+
+  &--js .location__map-image {
+    display: none;
+  }
+
+  &--js .js-map {
+    display: block;
+  }
 }
 
 .location__map-wrapper iframe {
   width: 100%;
 }
 
-.location__map-image {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
-}
-
 @media (min-width: $tablet-width) {
   .location__wrapper {
-    padding: 65px 0;
+    padding: 65px 0 54px;
   }
 
   .location__container {
-    padding: 0 70px;
+    padding: 0 60px;
   }
 
   .location__dealer-inv {
@@ -69,6 +79,13 @@
 
   .location__address {
     width: 170px;
+    text-align: right;
+  }
+
+  .location__address span {
+    padding-bottom: 20px;
+    display: block;
+    line-height: 1.2;
   }
 
   .location__map-wrapper iframe {
@@ -81,21 +98,27 @@
     position: absolute;
     z-index: 2;
 
-    top: 95px;
+    top: 94px;
     left: 50%;
     transform: translateX(-610px);
 
     width: 570px;
-    height: 201px;
+    min-height: 201px;
+    padding-top: 65px;
 
     background-color: #ffffff;
   }
 
   .location__container {
     width: 570px;
+    padding: 0 75px;
   }
 
   .location__map-wrapper iframe {
     height: 400px;
+  }
+
+  .location__address {
+    text-align: left;
   }
 }

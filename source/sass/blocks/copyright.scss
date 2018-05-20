@@ -1,9 +1,6 @@
-.copyright {
-  width: 100%;
-}
-
 .copyright__link-image {
   fill: #666666;
+  margin-right: -6px;
 }
 
 .copyright__link {
@@ -28,15 +25,13 @@
 }
 
 @media (min-width: $tablet-width) {
-  .copyright {
-    width: 33.33%;
-  }
-
   .copyright__link {
     justify-content: flex-end;
+    width: 175px;
+    margin-left: auto;
   }
 
   .copyright__text {
-    margin-right: 22px;
+    margin-right: 16px;
   }
 }

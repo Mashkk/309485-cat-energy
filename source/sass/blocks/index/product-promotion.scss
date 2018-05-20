@@ -35,13 +35,12 @@
 .product-promotion__slogan {
   font-size: 14px;
   text-transform: uppercase;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
 }
 
 .product-promotion__image-wrapper {
   position: relative;
   left: 50%;
-  top: -3px;
   transform: translateX(-50%);
 }
 
@@ -60,7 +59,7 @@
   }
 
   .product-promotion__button {
-    width: 245px;
+    min-width: 245px;
     height: 52px;
 
     margin: 0;
@@ -93,16 +92,17 @@
     order: 4;
     z-index: -1;
     margin-top: -80px;
+    width: 709px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-promotion {
-    min-height: 696px;
+    min-height: 698px;
     margin-bottom: 81px;
-    margin-top: -134px;
+    margin-top: -200px;
 
-    background: url("../img/index-background-desktop@1x.jpg") right no-repeat,
+    background: url("../img/index-background-desktop@1x.jpg") right bottom no-repeat,
       linear-gradient(to right, #ffffff 50%, #64a83b 50%);
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -112,12 +112,12 @@
   }
 
   .product-promotion__wrapper {
-    padding: 222px 40px 0 100px;
+    padding: 287px 40px 53px 100px;
   }
 
   .product-promotion__image-wrapper {
-    margin-top: -363px;
-    margin-left: 85px;
+    margin-top: -366px;
+    margin-left: 165px;
     z-index: 0;
   }
 
@@ -131,7 +131,7 @@
   }
 
   .product-promotion__slogan {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
   }
 
   .product-promotion__name,

@@ -1,9 +1,9 @@
 .main-products {
-  margin: 33px 0;
+  margin-bottom: 21px;
 }
 
 .main-products__title {
-  margin-bottom: 33px;
+  margin-bottom: 28px;
 }
 
 .main-products__list {
@@ -26,12 +26,16 @@
 
 @media (min-width: $tablet-width) {
   .main-products {
-    margin-bottom: 71px;
+    margin-bottom: 55px;
+  }
+
+  .main-products__title {
+    margin-bottom: 7px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-products {
-    margin-bottom: 80px;
+    margin-bottom: 65px;
   }
 }

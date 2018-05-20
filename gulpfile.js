@@ -15,6 +15,8 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var run = require("run-sequence");
+var htmlmin = require("gulp-htmlmin");
+var jsmin = require("gulp-minify");
 
 
 
@@ -37,6 +39,12 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include()
     ]))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("minify", function () {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 });
 
@@ -76,16 +84,32 @@ gulp.task("serve", ["style"], function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
+  gulp.watch("source/**/*.js", ["copyJs"]);
 });
 
-gulp.task("copy", function () {
+gulp.task("copy", ["copyJs"], function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
+    // "source/js/**"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("copyJs", function () {
+  return gulp.src([
     "source/js/**"
   ], {
     base: "source"
   })
+  .pipe(jsmin({
+    ext:{
+      min:".min.js"
+    },
+    ignoreFiles: ["*.min.js"]
+  }))
   .pipe(gulp.dest("build"));
 });
 
@@ -97,6 +121,7 @@ gulp.task("build", function (done) {
   run(
     "clean",
     "copy",
+    "minify",
     ["style", "images"],
     ["webp", "sprite"],
     "html",

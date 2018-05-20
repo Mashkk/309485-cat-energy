@@ -3,6 +3,7 @@
 @import "global";
 @import "font";
 @import "mixins";
+@import "blocks/page-wrapper";
 @import "blocks/title";
 @import "blocks/container";
 @import "blocks/text-font";
@@ -31,11 +32,13 @@
 @import "blocks/form/radio-form";
 @import "blocks/form/check-form";
 @import "blocks/form/comments";
+@import "blocks/index/sections-wrapper";
 @import "blocks/index/range";
 @import "blocks/index/demo-info";
 @import "blocks/index/diet-programs";
 @import "blocks/index/how-it-works";
 @import "blocks/index/live-demo";
 @import "blocks/index/live-toggle";
+@import "blocks/index/cat-mask";
 @import "blocks/index/product-promotion";
 @import "blocks/index/program";

@@ -1,16 +1,20 @@
 .company-logo {
   display: inline-block;
   vertical-align: middle;
+  cursor: pointer;
 
-  &:hover,
-  &:focus {
+  &:hover .logo-img,
+  &:focus .logo-img {
     opacity: 0.8;
-    outline: none;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.main-page .company-logo {
+  cursor: default;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,6 +27,5 @@
 @media (min-width: $desktop-width) {
   .company-logo__image {
     width: 202px;
-    height: auto;
   }
 }
