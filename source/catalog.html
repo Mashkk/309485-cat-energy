@@ -469,10 +469,10 @@
     </div>
     <script src="js/scripts.min.js"></script>
     <script>
-      document.querySelector("nav.main-nav")
-        .classList.replace("main-nav--nojs", "main-nav--js")
-      document.querySelector(".location__map-wrapper")
-        .classList.replace("location__map-wrapper--no-js", "location__map-wrapper--js");
+      document.querySelector("nav.main-nav").classList.remove("main-nav--nojs")
+      document.querySelector("nav.main-nav").classList.add("main-nav--js");
+      document.querySelector(".location__map-wrapper").classList.remove("location__map-wrapper--no-js")
+      document.querySelector(".location__map-wrapper").classList.add("location__map-wrapper--js");
     </script>
   </body>
 </html>
