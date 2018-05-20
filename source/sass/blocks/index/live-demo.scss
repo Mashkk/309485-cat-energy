@@ -109,17 +109,6 @@
     margin-bottom: 16px;
   }
 
-  //Достаточная реализация слайдера без JS,  clip-path некорректно поддерживается в IE11
-  .live-demo__slider-poligon--before {
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-    position: absolute;
-  }
-
-  .live-demo__slider-poligon--after {
-    display: block;
-    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
-  }
-
   .live-demo__conclusion {
     width: 250px;
     margin: 0;

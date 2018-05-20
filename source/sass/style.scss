@@ -3,6 +3,7 @@
 @import "global";
 @import "font";
 @import "mixins";
+@import "blocks/page-wrapper";
 @import "blocks/title";
 @import "blocks/container";
 @import "blocks/text-font";
@@ -38,5 +39,6 @@
 @import "blocks/index/how-it-works";
 @import "blocks/index/live-demo";
 @import "blocks/index/live-toggle";
+@import "blocks/index/cat-mask";
 @import "blocks/index/product-promotion";
 @import "blocks/index/program";
