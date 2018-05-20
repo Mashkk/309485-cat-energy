@@ -12,16 +12,18 @@ Toggle.addEventListener("click", function (evt) {
 });
 
 //Переключение котиков
-DemoWrapper.classList.remove("cat-mask");
-BeforeButton.addEventListener("click", function (evt) {
-  if (AfterCat.classList.contains("live-demo__slider-image--is-active")) {
-    AfterCat.classList.remove("live-demo__slider-image--is-active");
-  }
-  BeforeCat.classList.add("live-demo__slider-image--is-active");
-});
-AfterButton.addEventListener("click", function (evt) {
-  if (BeforeCat.classList.contains("live-demo__slider-image--is-active")) {
-    BeforeCat.classList.remove("live-demo__slider-image--is-active");
-  }
-  AfterCat.classList.add("live-demo__slider-image--is-active");
-});
+if (DemoWrapper) {
+  DemoWrapper.classList.remove("cat-mask")
+  BeforeButton.addEventListener("click", function (evt) {
+    if (AfterCat.classList.contains("live-demo__slider-image--is-active")) {
+      AfterCat.classList.remove("live-demo__slider-image--is-active");
+    }
+    BeforeCat.classList.add("live-demo__slider-image--is-active");
+  });
+  AfterButton.addEventListener("click", function (evt) {
+    if (BeforeCat.classList.contains("live-demo__slider-image--is-active")) {
+      BeforeCat.classList.remove("live-demo__slider-image--is-active");
+    }
+    AfterCat.classList.add("live-demo__slider-image--is-active");
+  });
+};
