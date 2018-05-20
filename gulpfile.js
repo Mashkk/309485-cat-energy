@@ -83,12 +83,22 @@ gulp.task("serve", ["style"], function () {
 
   gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("source/*.html", ["html"]);
+  gulp.watch("source/**/*.js", ["copyJs"]);
 });
 
 gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
+    "source/js/**"
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"));
+});
+
+gulp.task("copyJs", function () {
+  return gulp.src([
     "source/js/**"
   ], {
     base: "source"

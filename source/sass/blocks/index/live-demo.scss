@@ -19,18 +19,15 @@
   width: 100%;
 }
 
-.live-demo__slider-image--after {
+.live-demo__slider-image {
   display: none;
+  height: auto;
+  margin-bottom: 28px;
 }
 
 .live-demo__image-wrapper {
   margin: 0 auto;
   position: relative;
-}
-
-.live-demo__slider-image {
-  height: auto;
-  margin-bottom: 28px;
 }
 
 .live-demo__toggle {
@@ -61,6 +58,10 @@
   font-size: 14px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.live-demo__slider-image--is-active {
+  display: block;
 }
 
 @media (max-width: 747px) {
